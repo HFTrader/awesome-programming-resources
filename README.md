@@ -22,6 +22,8 @@ System V Application Binary Interface
 
 [RISC-V Instruction Set Manual 2019](papers/riscv-spec.pdf)
 
+[AMD Software development manuals](https://developer.amd.com/resources/developer-guides-manuals/)
+
 # FPGA
 
 
