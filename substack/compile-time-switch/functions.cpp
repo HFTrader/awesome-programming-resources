@@ -12,4 +12,9 @@ double sum3(double a, double b) {
     return a + b;
 }
 
-std::vector<Function> fntable = {{(void*)&sum1, 3}, {(void*)&sum2, 4}, {(void*)&sum3, 2}};
+double sum4() {
+    return 10;
+}
+
+std::vector<Function> fntable = {
+    {(void*)&sum1, 3}, {(void*)&sum2, 4}, {(void*)&sum3, 2}, {(void*)&sum4, 0}};

@@ -9,6 +9,7 @@
 #include <string_view>
 
 #include "functions.h"
+#include "utils.h"
 
 namespace caleth {
 double callfn(void* fn, const std::vector<double>& args);
@@ -35,12 +36,12 @@ void test(std::string_view name, Function fn, const std::vector<double>& args) {
     std::array<Result, 10000> samples;
     bool first = true;
     for (auto& result : samples) {
-        auto t0 = __builtin_ia32_rdtsc();
+        auto t0 = tic();
         if (!first) {
             result.value = Fn(fn.fnptr, args);
-            result.elapsed = __builtin_ia32_rdtsc() - t0;
+            result.elapsed = toc() - t0;
         } else {
-            result.elapsed = __builtin_ia32_rdtsc() - t0;
+            result.elapsed = toc() - t0;
             result.value = 0;
             first = false;
         }

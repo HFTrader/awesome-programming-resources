@@ -34,16 +34,6 @@ struct Caller : public CallerBase {
     }
 };
 
-struct Printer {
-    Printer() {
-        std::cout << "Callerbase:" << sizeof(CallerBase) << std::endl;
-        std::cout << "Caller1:" << sizeof(Caller<1>) << std::endl;
-        std::cout << "Caller50:" << sizeof(Caller<50>) << std::endl;
-    }
-};
-
-Printer init;
-
 template <size_t J>
 CallerBase* createCaller(size_t j) {
     if (j == J) return new Caller<J>();
@@ -52,7 +42,7 @@ CallerBase* createCaller(size_t j) {
 
 template <>
 CallerBase* createCaller<0>(size_t j) {
-    return nullptr;
+    return new Caller<0>();
 }
 
 template <size_t N, size_t J>
