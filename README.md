@@ -28,11 +28,19 @@ System V Application Binary Interface
 
 # FPGA
 
+[Xilinx Design Hubs](https://www.xilinx.com/support/documentation-navigation/design-hubs.html)
+
+[Xilinx Documentation Portal](https://docs.xilinx.com/home)
 
 # Unix
 
+The GNU C Library Reference Manual [PDF]](https://www.gnu.org/software/libc/manual/pdf/libc.pdf) [HTML](https://www.gnu.org/software/libc/manual/html_mono/libc.html)
 
 # C++
+
+[C++ Standards Drafts on Github](https://github.com/cplusplus/draft) - sources only - needs to be compiled/generated
+
+[Latest C++ Standard - generated from above](https://eel.is/c++draft/)
 
 [Certification Process for Safety-Critical and Mission-Critical Aerospace Software - NASA Ames](papers/20040014965.pdf)
 
