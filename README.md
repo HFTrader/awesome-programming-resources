@@ -16,7 +16,9 @@ System V Application Binary Interface
 
 [Intel Architecture Instruction Set Extensions and Future Reference - 2021](papers/architecture-instruction-set-extensions-programming-reference.pdf)
 
-[Intel 64 and IA32 Optimization Reference Manual - May 2020](64-ia-32-architectures-optimization-manual.pdf)
+[Intel 64 and IA32 Optimization Reference Manual - May 2020](papers/64-ia-32-architectures-optimization-manual.pdf)
+
+[Intel® 64 and IA-32 Architectures - Software Developer’s Manual - December 2022](papers/325462-sdm-vol-1-2abcd-3abcd.pdf)
 
 [Instruction Latencies and Throughput for Intel and AMD Processors - Agner 2019](papers/x86-timing.pdf)
 
