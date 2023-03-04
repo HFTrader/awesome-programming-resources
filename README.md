@@ -25,6 +25,8 @@ System V Application Binary Interface
 
 [Instruction Latencies and Throughput for Intel and AMD Processors - Agner 2019](papers/x86-timing.pdf)
 
+[Intel Instruction Set Reference (online)](https://www.intel.com/content/www/us/en/docs/programmable/683836/current/instruction-set-reference-37798.html)
+
 [RISC-V Instruction Set Manual 2019](papers/riscv-spec.pdf)
 
 [AMD Software development manuals](https://developer.amd.com/resources/developer-guides-manuals/)
