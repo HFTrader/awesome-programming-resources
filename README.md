@@ -1,5 +1,8 @@
 # awesome-programming-resources
+
 My curated collection of great sources of information for programming
+
+The code inside **substack** was moved to [AssemblyTales](https://github.com/HFTrader/AssemblyTales)
 
 # Hardware 
 Landmark 2007 paper from Ulrich Drepper 
