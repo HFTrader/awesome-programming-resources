@@ -31,6 +31,8 @@ System V Application Binary Interface
 
 [AMD Software development manuals](https://developer.amd.com/resources/developer-guides-manuals/)
 
+[Micro-ops complete reference](https://uops.info/)
+
 # FPGA
 
 [Xilinx Design Hubs](https://www.xilinx.com/support/documentation-navigation/design-hubs.html)
