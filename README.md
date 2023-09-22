@@ -57,6 +57,13 @@ The GNU C Library Reference Manual [PDF]](https://www.gnu.org/software/libc/manu
 
 [Fast Efficient Fixed Size Memory Pools](papers/computation_tools_2012_1_10_80006.pdf)
 
+# Compilers
+
+[LLVM Tutor](https://github.com/banach-space/llvm-tutor) - A collection of out-of-tree LLVM passes for teaching and learning 
+
+[CLANG Tutor](https://github.com/banach-space/clang-tutor) - A collection of out-of-tree Clang plugins for teaching and learning 
+
+
 # Assembly
 
 # Books
