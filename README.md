@@ -79,33 +79,51 @@ The GNU C Library Reference Manual [PDF]](https://www.gnu.org/software/libc/manu
 [Quantitative Portfolio Management](https://www.amazon.com/Quantitative-Portfolio-Management-Statistical-Arbitrage )
 
 "Equity Portfolio Management" (Fabozzi) https://www.amazon.com/Equity-Portfolio-Management-Frank-Fabozzi/dp/1883249406 
+
 "Advanced Portfolio Management" https://www.amazon.com/Advanced-Portfolio-Management-Fundamental-Investors
+
 "Modern Invesment Management" (Litterman/GSAM) https://www.amazon.com/Modern-Investment-Management-Equilibrium-Approach/dp/0471124109#customerReviews 
 
 ## Analysis of financial time series:
 
 "Anaysis of Financial Time Series" (Tsay) https://www.amazon.com/Analysis-Financial-Time-Ruey-Tsay/dp/0470414359
+
 "Applied Econometric Time Series" https://www.amazon.com/Applied-Econometric-Wiley-Probability-Statistics 
+
 "Econometrics: A Modern Approach" https://www.amazon.com/Introductory-Econometrics-Modern-Approach-MindTap-dp-1337558869/dp/1337558869/
+
 "Statistics & Data Analysis for Financial Engineering" https://www.amazon.com/dp/1461427495
 
 ## Financial ML/Stats:
 
 "The Elements of Statistical Learning" https://www.amazon.com/Elements-Statistical-Learning-Prediction-Statistics/dp/0387848576
+
 "All of Statistics" https://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/1441923225 
+
 "Advances in Financial ML" (Lopez de Prado) https://www.amazon.com/Advances-Financial-Machine-Learning-Marcos/dp/1119482089
+
 "Linear Algebra Done Right" https://www.amazon.com/dp/0387982582
+
 "Deep Reinforcement Learning" (Yuxi Li) https://arxiv.org/pdf/1810.06339
 
 ## Options, derivatives, credit, FX, & commodities: 
 
 "Options, Futures, and Other Derivatives" (Hull) https://www.amazon.com/Options-Futures-Other-Derivatives-Global-dp-1292410655
+
 "Stochastic Volatility Modeling" https://www.amazon.com/Stochastic-Volatility-Modeling-Financial-Mathematics/dp/1482244063
+
 "Value at Risk" https://www.amazon.com/gp/product/0071464956
+
 "Mathematical Methods for FX" https://www.amazon.com/gp/product/9810248237
+
 "FX Options & Structued Products" https://www.amazon.com/Options-Structured-Products-Wiley-Finance/dp/1118471067 
+
 "Commodities & Commodity Derivatives" https://www.amazon.com/Commodities-Commodity-Derivatives-Modelling-Agriculturals/dp/0470012188 
+
 "Managing Credit Risk" (Altman) https://www.amazon.com/Managing-Credit-Risk-Challenge-Financial/dp/0470118725 
+
 "Credit Risk Modeling" https://www.amazon.com/gp/product/1584889926
+
 "Bond Markets, Analysis, & Strategies" (Fabozzi) https://www.amazon.com/Bond-Markets-Analysis-Strategies-tenth-dp-026204627X/dp/026204627X/ 
+
 "Valuation" (Damodoran - makes both lists) https://www.amazon.com/Investment-Valuation-Techniques-Determining-University/dp/1118130731
