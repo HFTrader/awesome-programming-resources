@@ -73,8 +73,11 @@ The GNU C Library Reference Manual [PDF]](https://www.gnu.org/software/libc/manu
 ## Risk & asset allocation: 
 
 [Active Portfolio Management (Grinold & Kahn)](https://www.amazon.com/Active-Portfolio-Management-Quantitative-Controlling/dp/0070248826)
+
 [Quantitative Equity Portfolio Management]( https://www.amazon.com/Quantitative-Equity-Portfolio-Management-Second-ebook/dp/B09KF52TKD)
-"Quantitative Portfolio Management" https://www.amazon.com/Quantitative-Portfolio-Management-Statistical-Arbitrage 
+
+[Quantitative Portfolio Management](https://www.amazon.com/Quantitative-Portfolio-Management-Statistical-Arbitrage )
+
 "Equity Portfolio Management" (Fabozzi) https://www.amazon.com/Equity-Portfolio-Management-Frank-Fabozzi/dp/1883249406 
 "Advanced Portfolio Management" https://www.amazon.com/Advanced-Portfolio-Management-Fundamental-Investors
 "Modern Invesment Management" (Litterman/GSAM) https://www.amazon.com/Modern-Investment-Management-Equilibrium-Approach/dp/0471124109#customerReviews 
