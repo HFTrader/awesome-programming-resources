@@ -124,7 +124,7 @@ System V Application Binary Interface
 
 ## Core Documentation
 
-The GNU C Library Reference Manual [PDF](https://www.gnu.org/software/libc/manual/pdf/libc.pdf) [HTML](https://www.gnu.org/software/libc/manual/html_mono/libc.html)
+The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https://www.gnu.org/software/libc/manual/html_mono/libc.html)
 
 [POSIX.1-2024 (IEEE Std 1003.1)](https://pubs.opengroup.org/onlinepubs/9799919799/)
 
@@ -269,7 +269,7 @@ The GNU C Library Reference Manual [PDF](https://www.gnu.org/software/libc/manua
 
 [x86 Assembly Guide (University of Virginia)](https://www.cs.virginia.edu/~evans/cs216/guides/x86.html)
 
-[x86-64 Assembly Language Programming with Ubuntu](http://www.egr.unlv.edu/~ed/assembly64.pdf)
+[x86-64 Assembly Language Programming with Ubuntu](papers/x86-64-assembly-ubuntu.pdf)
 
 [Intel x86 Assembler Instruction Set Opcode Table](http://ref.x86asm.net/)
 
@@ -423,7 +423,7 @@ The GNU C Library Reference Manual [PDF](https://www.gnu.org/software/libc/manua
 
 [Linux Insides](https://0xax.gitbooks.io/linux-insides/content/)
 
-[Writing a Simple Operating System from Scratch](https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf)
+[Writing a Simple Operating System from Scratch](papers/os-from-scratch.pdf)
 
 ## High-Performance Networking
 
@@ -581,21 +581,21 @@ The GNU C Library Reference Manual [PDF](https://www.gnu.org/software/libc/manua
 
 ## Foundational Papers
 
-[Time, Clocks, and the Ordering of Events (Lamport 1978)](https://lamport.azurewebsites.net/pubs/time-clocks.pdf)
+[Time, Clocks, and the Ordering of Events (Lamport 1978)](papers/lamport-time-clocks.pdf)
 
-[The Byzantine Generals Problem](https://lamport.azurewebsites.net/pubs/byz.pdf)
+[The Byzantine Generals Problem](papers/byzantine-generals.pdf)
 
-[Paxos Made Simple](https://lamport.azurewebsites.net/pubs/paxos-simple.pdf)
+[Paxos Made Simple](papers/paxos-simple.pdf)
 
-[In Search of an Understandable Consensus Algorithm (Raft)](https://raft.github.io/raft.pdf)
+[In Search of an Understandable Consensus Algorithm (Raft)](papers/raft.pdf)
 
-[Dynamo: Amazon's Highly Available Key-value Store](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
+[Dynamo: Amazon's Highly Available Key-value Store](papers/dynamo-amazon.pdf)
 
-[MapReduce: Simplified Data Processing on Large Clusters](https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf)
+[MapReduce: Simplified Data Processing on Large Clusters](papers/mapreduce-google.pdf)
 
-[The Google File System](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)
+[The Google File System](papers/gfs-google.pdf)
 
-[Bigtable: A Distributed Storage System for Structured Data](https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf)
+[Bigtable: A Distributed Storage System for Structured Data](papers/bigtable-google.pdf)
 
 ## Consensus & Coordination
 
