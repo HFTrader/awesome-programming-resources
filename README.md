@@ -17,7 +17,7 @@ The code inside **substack** was moved to [AssemblyTales](https://github.com/HFT
 [Intel® 64 and IA-32 Architectures - Software Developer's Manual - Latest](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)
 *The definitive reference for Intel instruction set architecture. Covers every instruction, architectural details, system programming, and virtualization. The bible for x86 development.*
 
-[Intel 64 and IA32 Optimization Reference Manual - Latest](https://www.intel.com/content/www/us/en/content-details/671488/intel-64-and-ia-32-architectures-optimization-reference-manual-volume-1.html)
+[Intel 64 and IA32 Optimization Reference Manual - Latest](https://www.intel.com/content/www/us/en/content-details/671488/intel-64-and-ia-32-architectures-optimization-reference-manual-volume-1.html) [PDF](papers/intel-optimization-manual.pdf)
 *Intel's official guide to writing high-performance code. Details microarchitectural optimization techniques, instruction throughput, branch prediction, and cache behavior for Intel CPUs.*
 
 [Intel Architecture Instruction Set Extensions and Future Reference - Latest](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)
@@ -29,7 +29,7 @@ The code inside **substack** was moved to [AssemblyTales](https://github.com/HFT
 [Instruction Latencies and Throughput for Intel and AMD Processors - Agner Fog Latest](https://www.agner.org/optimize/)
 *Comprehensive tables of instruction timing for all modern CPUs. Critical for performance optimization, understanding execution ports, and instruction-level parallelism. Industry-standard reference.*
 
-[Agner Fog's Optimization Manuals (Complete Collection)](https://www.agner.org/optimize/)
+[Agner Fog's Optimization Manuals (Complete Collection)](https://www.agner.org/optimize/) [C++ PDF](papers/agner-fog-optimization.pdf) [Assembly PDF](papers/agner-fog-assembly.pdf) [Microarch PDF](papers/agner-fog-microarch.pdf)
 *Five detailed manuals covering optimization in C++, assembly, microarchitecture, and calling conventions. Practical, authoritative guidance based on extensive testing and research.*
 
 [Micro-ops complete reference](https://uops.info/)
@@ -192,7 +192,7 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 
 ## Shell & Scripting
 
-[Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/)
+[Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/) [PDF](papers/bash-guide.pdf)
 *Comprehensive tutorial on bash scripting from basics to advanced topics. Covers variables, control flow, functions, text processing, and script development best practices.*
 
 [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
@@ -458,7 +458,7 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 
 ## Official Documentation
 
-[The Rust Programming Language (The Book)](https://doc.rust-lang.org/book/)
+[The Rust Programming Language (The Book)](https://doc.rust-lang.org/book/) [PDF](papers/rust-book.pdf)
 *Official Rust book teaching ownership, borrowing, lifetimes, and core concepts. Best starting point for learning Rust systematically with comprehensive examples.*
 
 [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
@@ -732,7 +732,7 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 [The Cryptopals Crypto Challenges](https://cryptopals.com/)
 *Hands-on cryptography challenges teaching concepts through breaking implementations. Learn by attacking weak crypto including AES, RSA, and padding oracles.*
 
-[A Graduate Course in Applied Cryptography](https://toc.cryptobook.us/)
+[A Graduate Course in Applied Cryptography](https://toc.cryptobook.us/) [PDF](papers/cryptography-course.pdf)
 *Free comprehensive textbook by Boneh and Shoup. Covers modern cryptographic primitives, protocols, and mathematical foundations at graduate level.*
 
 [Practical Cryptography for Developers](https://cryptobook.nakov.com/)
@@ -867,7 +867,7 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 
 ## Network Programming
 
-[Beej's Guide to Network Programming](https://beej.us/guide/bgnet/)
+[Beej's Guide to Network Programming](https://beej.us/guide/bgnet/) [PDF](papers/beej-network-programming.pdf)
 *Practical guide to socket programming in C. Covers TCP, UDP, and network programming basics with clear examples.*
 
 [TCP/IP Illustrated, Volume 1](https://www.informit.com/store/tcp-ip-illustrated-volume-1-the-protocols-9780321336316)
