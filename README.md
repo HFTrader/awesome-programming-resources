@@ -35,6 +35,9 @@ The code inside **substack** was moved to [AssemblyTales](https://github.com/HFT
 [Micro-ops complete reference](https://uops.info/)
 *Database showing how instructions decompose into micro-operations on various CPU architectures. Essential for understanding execution unit pressure and optimizing hot loops.*
 
+[Intel Sapphire Rapids & Emerald Rapids Architecture](https://www.intel.com/content/www/us/en/products/docs/processors/xeon-accelerated/4th-gen-xeon-scalable-processors.html)
+*Documentation for Intel's 4th and 5th Gen Xeon processors with DDR5, PCIe 5.0, and built-in accelerators. Features AMX for AI workloads and optimizations for cloud and HPC.*
+
 ## AMD Architecture
 
 [AMD64 Architecture Programmer's Manual - Latest](https://www.amd.com/en/search/documentation/hub.html)
@@ -48,6 +51,9 @@ The code inside **substack** was moved to [AssemblyTales](https://github.com/HFT
 
 [AMD EPYC 4th Gen (Genoa) Tuning Guide](https://www.amd.com/en/developer/resources/technical-publications.html)
 *Platform-level tuning for Genoa systems including BIOS settings, OS configuration, and performance monitoring. Essential for extracting maximum performance in HPC and datacenter environments.*
+
+[AMD Zen 5 Architecture](https://www.amd.com/en/products/specifications/processors.html)
+*Latest Zen 5 microarchitecture in EPYC 9005 and Ryzen 9000 series. Improved IPC, AVX-512 support, enhanced branch prediction, and optimizations for AI and cloud workloads.*
 
 [AMD Software development manuals](https://developer.amd.com/resources/developer-guides-manuals/)
 *Complete collection of AMD technical documentation including architecture manuals, optimization guides, and programming references for all AMD processor families.*
@@ -67,7 +73,10 @@ The code inside **substack** was moved to [AssemblyTales](https://github.com/HFT
 *Specification for ARM's scalable vector extension supporting variable vector lengths. Critical for HPC and server optimization on modern ARM processors with advanced SIMD.*
 
 [Apple Silicon M-Series Documentation](https://developer.apple.com/documentation/apple-silicon)
-*Official Apple documentation for developing and optimizing applications on M1/M2/M3 chips. Covers architecture-specific features, performance guidelines, and Rosetta 2 translation.*
+*Official Apple documentation for developing and optimizing applications on M1/M2/M3/M4 chips. Covers architecture-specific features, performance guidelines, and Rosetta 2 translation.*
+
+[Apple M4 Architecture](https://www.apple.com/newsroom/2024/05/apple-introduces-m4-chip/)
+*Apple's latest chip built on 3nm process with enhanced Neural Engine. Features up to 10-core CPU, 10-core GPU, and significant ML performance improvements for AI workloads.*
 
 [AWS Graviton Performance Runbook](https://github.com/aws/aws-graviton-getting-started)
 *AWS's practical guide to optimizing workloads for Graviton processors. Includes compiler flags, library recommendations, and performance tuning for cloud-native ARM deployments.*
@@ -434,7 +443,7 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 [Istio Documentation](https://istio.io/latest/docs/)
 *Service mesh providing traffic management, security, and observability. Handles service-to-service communication, mTLS, and advanced routing without code changes.*
 
-[Linkerd Documentation](https://linkerd.io/2.14/overview/)
+[Linkerd Documentation](https://linkerd.io/latest/overview/)
 *Lightweight service mesh focused on simplicity and performance. Provides mutual TLS, load balancing, and observability with minimal configuration.*
 
 [Envoy Proxy Documentation](https://www.envoyproxy.io/docs)
@@ -513,6 +522,231 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 
 [Crust of Rust (Jon Gjengset)](https://www.youtube.com/playlist?list=PLqbS7AVVErFiWDOAVrPt7aYmnuuOLYvOa)
 *Video series diving deep into Rust internals and advanced topics. Covers iterators, smart pointers, async, and intermediate-to-advanced concepts.*
+
+# Python
+
+## Official Documentation
+
+[Python Official Documentation](https://docs.python.org/3/)
+*Comprehensive official documentation for Python. Covers language reference, standard library, tutorials, and setup guides. Essential reference for Python development at all levels.*
+
+[The Python Tutorial](https://docs.python.org/3/tutorial/)
+*Official tutorial for learning Python fundamentals. Covers syntax, data structures, modules, and standard library. Best starting point for new Python programmers.*
+
+[Python Standard Library](https://docs.python.org/3/library/)
+*Complete reference for Python's extensive standard library. Documents built-in functions, data types, file handling, networking, and system interfaces for solving common problems.*
+
+[Python Language Reference](https://docs.python.org/3/reference/)
+*Formal specification of Python syntax and semantics. Defines language grammar, data model, execution model, and built-in types for understanding Python behavior.*
+
+[What's New in Python 3.13](https://docs.python.org/3/whatsnew/3.13.html)
+*Summary of latest Python release features and improvements. Tracks new syntax, standard library additions, performance enhancements, and deprecations.*
+
+## Package Management & Tools
+
+[pip Documentation](https://pip.pypa.io/)
+*Official package installer for Python. Manages dependencies, installs from PyPI, handles virtual environments, and supports requirements files for reproducible environments.*
+
+[Poetry Documentation](https://python-poetry.org/docs/)
+*Modern dependency management and packaging tool. Provides dependency resolution, virtual environment management, and publishing with simple declarative configuration.*
+
+[uv - Fast Python Package Installer](https://github.com/astral-sh/uv)
+*Extremely fast Python package installer and resolver written in Rust. Drop-in pip replacement with 10-100x speedup for dependency installation and resolution.*
+
+[Rye - Python Project Management](https://rye-up.com/)
+*All-in-one project management tool for Python. Handles Python installation, dependency management, virtual environments, and builds with unified workflow.*
+
+[PDM - Modern Python Package Manager](https://pdm-project.org/)
+*PEP 582-compliant package manager avoiding virtual environments. Stores packages centrally, supports modern standards, and provides fast dependency resolution.*
+
+[pyenv - Python Version Management](https://github.com/pyenv/pyenv)
+*Tool for managing multiple Python versions. Allows per-project Python version selection, building from source, and switching between interpreter implementations.*
+
+## Web Frameworks
+
+[Django Documentation](https://docs.djangoproject.com/)
+*Comprehensive web framework with batteries included. Provides ORM, admin interface, authentication, and templating. Industry standard for full-featured web applications.*
+
+[Flask Documentation](https://flask.palletsprojects.com/)
+*Lightweight WSGI web framework with minimal boilerplate. Flexible and extensible design for building web applications, APIs, and microservices.*
+
+[FastAPI Documentation](https://fastapi.tiangolo.com/)
+*Modern async web framework for building APIs. Automatic OpenAPI documentation, type hints, async support, and excellent performance. Ideal for REST and GraphQL APIs.*
+
+[Starlette](https://www.starlette.io/)
+*Lightweight ASGI framework for async Python. Foundation for FastAPI, provides routing, WebSocket support, and middleware. Perfect for high-performance async applications.*
+
+## Async Programming
+
+[Asyncio Documentation](https://docs.python.org/3/library/asyncio.html)
+*Official async I/O framework for Python. Provides event loop, coroutines, tasks, and streams for writing concurrent code with async/await syntax.*
+
+[AIOHTTP Documentation](https://docs.aiohttp.org/)
+*Async HTTP client and server library. Enables concurrent web requests, WebSocket support, and building async web services with asyncio integration.*
+
+[Trio - Async I/O Library](https://trio.readthedocs.io/)
+*Pythonic async library with structured concurrency. Provides nurseries for task management, cancellation scopes, and safer patterns than asyncio for complex async code.*
+
+## Data Science & Scientific Computing
+
+[NumPy Documentation](https://numpy.org/doc/)
+*Fundamental package for numerical computing. Provides multidimensional arrays, vectorized operations, linear algebra, and foundation for scientific Python ecosystem.*
+
+[Pandas Documentation](https://pandas.pydata.org/docs/)
+*Data manipulation and analysis library. Offers DataFrames for tabular data, time series handling, data cleaning, and integration with visualization and ML tools.*
+
+[SciPy Documentation](https://docs.scipy.org/)
+*Library for scientific and technical computing. Provides optimization, integration, interpolation, signal processing, and statistical functions built on NumPy.*
+
+[Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
+*Comprehensive plotting library for Python. Creates publication-quality figures, supports multiple output formats, and provides low-level control over visualization elements.*
+
+[Jupyter Documentation](https://jupyter.org/documentation)
+*Interactive computing environment for exploratory data analysis. Combines code, visualizations, and narrative text in notebooks for reproducible research and teaching.*
+
+## Testing & Quality
+
+[pytest Documentation](https://docs.pytest.org/)
+*Powerful testing framework with simple syntax. Provides fixtures, parametrization, plugins, and detailed assertion introspection. Industry standard for Python testing.*
+
+[unittest Documentation](https://docs.python.org/3/library/unittest.html)
+*Built-in unit testing framework inspired by JUnit. Provides test discovery, fixtures, assertions, and mocking without external dependencies.*
+
+[Black - Code Formatter](https://black.readthedocs.io/)
+*Uncompromising Python code formatter. Enforces consistent style automatically, eliminating formatting debates. Used widely in Python projects for code consistency.*
+
+[Ruff - Fast Python Linter](https://docs.astral.sh/ruff/)
+*Extremely fast Python linter and formatter written in Rust. Replaces Flake8, isort, and more with single tool. 10-100x faster than alternatives.*
+
+[mypy - Static Type Checker](https://mypy.readthedocs.io/)
+*Static type checker for Python using type hints. Catches type errors before runtime, improves code documentation, and enables better IDE support.*
+
+# Go
+
+## Official Documentation
+
+[Go Official Documentation](https://go.dev/doc/)
+*Complete Go language documentation and learning resources. Covers installation, tutorials, language specification, and standard library for building efficient concurrent software.*
+
+[Effective Go](https://go.dev/doc/effective_go)
+*Official guide to writing clear, idiomatic Go code. Covers formatting, naming conventions, concurrency patterns, and common idioms. Essential reading for Go developers.*
+
+[A Tour of Go](https://go.dev/tour/)
+*Interactive introduction to Go fundamentals. Covers syntax, types, functions, concurrency, and standard library through executable examples in the browser.*
+
+[Go Language Specification](https://go.dev/ref/spec)
+*Formal specification of Go syntax and semantics. Defines grammar, types, declarations, and execution model for understanding language behavior precisely.*
+
+[Go Standard Library](https://pkg.go.dev/std)
+*Complete reference for Go's standard library. Documents packages for I/O, networking, concurrency, testing, and common tasks with examples and performance characteristics.*
+
+## Concurrency & Performance
+
+[Go Concurrency Patterns](https://go.dev/blog/pipelines)
+*Official guide to Go concurrency patterns. Explains goroutines, channels, select statements, and patterns like pipelines and cancellation for concurrent programs.*
+
+[Go Memory Model](https://go.dev/ref/mem)
+*Formal specification of memory semantics in Go. Defines happens-before relationships, synchronization guarantees, and visibility for writing correct concurrent code.*
+
+[Profiling Go Programs](https://go.dev/blog/pprof)
+*Guide to profiling Go applications using pprof. Covers CPU profiling, memory profiling, goroutine analysis, and identifying performance bottlenecks in production.*
+
+## Web & Networking
+
+[net/http Package](https://pkg.go.dev/net/http)
+*Go's powerful HTTP client and server implementation. Built-in support for HTTP/2, timeouts, middleware patterns, and serving web applications without frameworks.*
+
+[Go gRPC Documentation](https://grpc.io/docs/languages/go/)
+*Official gRPC implementation for Go. Provides high-performance RPC framework with protocol buffers, streaming, and automatic code generation for microservices.*
+
+[Gin Web Framework](https://gin-gonic.com/docs/)
+*Fast HTTP web framework with martini-like API. Provides routing, middleware, JSON validation, and error management for building REST APIs efficiently.*
+
+[Echo Framework](https://echo.labstack.com/docs)
+*High-performance minimalist Go web framework. Features optimized routing, middleware, automatic TLS, and HTTP/2 support for scalable web services.*
+
+## Tools & Libraries
+
+[Go Modules Reference](https://go.dev/ref/mod)
+*Official Go dependency management system. Defines module versioning, dependency resolution, and publishing for reproducible builds and version management.*
+
+[GoReleaser](https://goreleaser.com/)
+*Release automation tool for Go projects. Builds binaries for multiple platforms, creates release notes, publishes to GitHub/GitLab, and handles Docker images.*
+
+[go-chi Router](https://github.com/go-chi/chi)
+*Lightweight composable router for building HTTP services. Provides RESTful routing, middleware, and context management compatible with net/http.*
+
+[Cobra - CLI Library](https://cobra.dev/)
+*Library for creating powerful CLI applications. Used by Kubernetes, Docker, GitHub CLI. Provides subcommands, flags, and automatic help generation.*
+
+# JavaScript & TypeScript
+
+## Official Documentation
+
+[JavaScript MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+*Comprehensive JavaScript reference from Mozilla. Covers language fundamentals, Web APIs, best practices, and modern ECMAScript features with extensive examples.*
+
+[TypeScript Documentation](https://www.typescriptlang.org/docs/)
+*Official TypeScript language documentation. Explains type system, compiler options, integration with JavaScript, and advanced types for building type-safe applications.*
+
+[ECMAScript Specification](https://tc39.es/ecma262/)
+*Official JavaScript language specification. Defines syntax, semantics, and standard library. Reference for understanding exact language behavior and new proposals.*
+
+[TC39 Proposals](https://github.com/tc39/proposals)
+*Tracking repository for JavaScript language proposals. Shows features in development from Stage 0-4, previewing future language capabilities.*
+
+## Runtimes & Platforms
+
+[Node.js Documentation](https://nodejs.org/docs/latest/api/)
+*Official Node.js API documentation. Covers modules, file system, networking, streams, and runtime APIs for server-side JavaScript development.*
+
+[Deno Documentation](https://docs.deno.com/)
+*Modern secure runtime for JavaScript and TypeScript. Built-in TypeScript support, secure by default, modern standard library, and compatibility with Node.js.*
+
+[Bun Documentation](https://bun.sh/docs)
+*Fast all-in-one JavaScript runtime and toolkit. Provides bundler, package manager, test runner, and runtime with extreme performance written in Zig.*
+
+[V8 JavaScript Engine](https://v8.dev/docs)
+*Documentation for V8, Chrome's JavaScript engine. Covers optimization techniques, embedding V8, and understanding performance characteristics for high-performance code.*
+
+## Frontend Frameworks
+
+[React Documentation](https://react.dev/)
+*Official React library documentation. Covers components, hooks, state management, and modern patterns for building user interfaces with declarative approach.*
+
+[Vue.js Documentation](https://vuejs.org/guide/)
+*Progressive JavaScript framework for UIs. Provides reactive data binding, component system, and smooth learning curve for building interactive web applications.*
+
+[Angular Documentation](https://angular.dev/)
+*Comprehensive framework for building web applications. Includes TypeScript, RxJS, dependency injection, and CLI for enterprise-scale frontend development.*
+
+[Svelte Documentation](https://svelte.dev/docs)
+*Compiler-based framework generating optimized vanilla JavaScript. No runtime overhead, reactive by default, simple syntax for building fast web applications.*
+
+## Build Tools & Bundlers
+
+[Vite Documentation](https://vitejs.dev/guide/)
+*Next-generation frontend build tool. Lightning-fast HMR, optimized builds with Rollup, and native ES modules for modern web development workflow.*
+
+[Webpack Documentation](https://webpack.js.org/concepts/)
+*Powerful module bundler for JavaScript applications. Provides code splitting, loaders, plugins, and optimization for complex frontend build requirements.*
+
+[esbuild Documentation](https://esbuild.github.io/)
+*Extremely fast JavaScript bundler written in Go. 10-100x faster than alternatives, supports TypeScript, JSX, tree shaking, and minification.*
+
+[Rollup Documentation](https://rollupjs.org/introduction/)
+*Module bundler for JavaScript libraries. Focuses on ES modules, tree shaking, and generating efficient bundles for library distribution.*
+
+## Package Management
+
+[npm Documentation](https://docs.npmjs.com/)
+*Default package manager for Node.js. Manages dependencies, scripts, publishing, and registry access for JavaScript ecosystem packages.*
+
+[pnpm Documentation](https://pnpm.io/)
+*Fast, disk-efficient package manager. Uses content-addressable storage to save disk space and speed, strict dependency resolution, and monorepo support.*
+
+[Yarn Documentation](https://yarnpkg.com/)
+*Alternative package manager with deterministic installs. Provides workspaces for monorepos, Plug'n'Play for faster installs, and improved security.*
 
 # WebAssembly
 
@@ -618,9 +852,6 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 
 ## Memory Management
 
-[What Every Programmer Should Know About Memory (Ulrich Drepper)](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
-*Same foundational paper on memory architecture. Essential reading duplicated here for systems programming context.*
-
 [Memory Management Reference](https://www.memorymanagement.org/)
 *Comprehensive encyclopedia of memory management techniques. Covers garbage collection, allocation algorithms, and memory system design.*
 
@@ -632,7 +863,7 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 
 ## Synchronization & Lock-Free Programming
 
-[Is Parallel Programming Hard?](https://www.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html)
+[Is Parallel Programming Hard?](papers/perfbook.pdf) [HTML](https://www.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html)
 *Paul McKenney's comprehensive book on parallel programming. Covers memory models, synchronization primitives, RCU, and lock-free algorithms with Linux focus.*
 
 [The Art of Multiprocessor Programming](https://www.elsevier.com/books/the-art-of-multiprocessor-programming/herlihy/978-0-12-415950-1)
@@ -890,64 +1121,276 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 [Awesome Distributed Systems](https://github.com/theanalyst/awesome-distributed-systems)
 *Curated list of distributed systems papers, books, and resources. Organized collection for deep learning about distributed computing.*
 
-# Books
+# Databases
 
-# Finance
+## Relational Databases
 
-## Risk & asset allocation: 
+[PostgreSQL Documentation](https://www.postgresql.org/docs/)
+*Comprehensive documentation for PostgreSQL, advanced open-source relational database. Covers SQL, indexing, transactions, performance tuning, and extensions for production deployments.*
 
-[Active Portfolio Management (Grinold & Kahn)](https://www.amazon.com/Active-Portfolio-Management-Quantitative-Controlling/dp/0070248826)
+[PostgreSQL Internals](https://www.interdb.jp/pg/)
+*Deep dive into PostgreSQL architecture and implementation. Explains MVCC, query processing, transaction management, and storage internals for advanced users.*
 
-[Quantitative Equity Portfolio Management]( https://www.amazon.com/Quantitative-Equity-Portfolio-Management-Second-ebook/dp/B09KF52TKD)
+[MySQL Documentation](https://dev.mysql.com/doc/)
+*Official MySQL database documentation. Covers installation, SQL reference, replication, InnoDB storage engine, and optimization for web applications and services.*
 
-[Quantitative Portfolio Management](https://www.amazon.com/Quantitative-Portfolio-Management-Statistical-Arbitrage )
+[SQLite Documentation](https://www.sqlite.org/docs.html)
+*Documentation for SQLite embedded database. Lightweight, serverless, zero-configuration SQL database perfect for mobile apps, desktop software, and testing.*
 
-"Equity Portfolio Management" (Fabozzi) https://www.amazon.com/Equity-Portfolio-Management-Frank-Fabozzi/dp/1883249406 
+[Use The Index, Luke](https://use-the-index-luke.com/)
+*Guide to database performance for developers. Explains how indexes work, query optimization, and writing efficient SQL across multiple database systems.*
 
-"Advanced Portfolio Management" https://www.amazon.com/Advanced-Portfolio-Management-Fundamental-Investors
+## NoSQL Databases
 
-"Modern Invesment Management" (Litterman/GSAM) https://www.amazon.com/Modern-Investment-Management-Equilibrium-Approach/dp/0471124109#customerReviews 
+[MongoDB Documentation](https://www.mongodb.com/docs/)
+*Official MongoDB document database documentation. Covers data modeling, queries, aggregation, replication, and sharding for flexible schema applications.*
 
-## Analysis of financial time series:
+[Redis Documentation](https://redis.io/docs/)
+*Documentation for Redis in-memory data structure store. Used for caching, session storage, pub/sub messaging, and real-time analytics with microsecond latency.*
 
-"Anaysis of Financial Time Series" (Tsay) https://www.amazon.com/Analysis-Financial-Time-Ruey-Tsay/dp/0470414359
+[Cassandra Documentation](https://cassandra.apache.org/doc/latest/)
+*Apache Cassandra distributed NoSQL database documentation. Provides high availability, linear scalability, and tunable consistency for massive datasets.*
 
-"Applied Econometric Time Series" https://www.amazon.com/Applied-Econometric-Wiley-Probability-Statistics 
+[DynamoDB Documentation](https://docs.aws.amazon.com/dynamodb/)
+*AWS DynamoDB serverless key-value database documentation. Fully managed, single-digit millisecond performance, automatic scaling for cloud-native applications.*
 
-"Econometrics: A Modern Approach" https://www.amazon.com/Introductory-Econometrics-Modern-Approach-MindTap-dp-1337558869/dp/1337558869/
+## Time Series & Analytics
 
-"Statistics & Data Analysis for Financial Engineering" https://www.amazon.com/dp/1461427495
+[ClickHouse Documentation](https://clickhouse.com/docs)
+*Documentation for ClickHouse columnar analytical database. Extremely fast OLAP queries on billions of rows, real-time analytics, and excellent compression.*
 
-## Financial ML/Stats:
+[TimescaleDB Documentation](https://docs.timescale.com/)
+*Time-series database built on PostgreSQL. Combines SQL interface with optimizations for time-series data, IoT metrics, and monitoring applications.*
 
-"The Elements of Statistical Learning" https://www.amazon.com/Elements-Statistical-Learning-Prediction-Statistics/dp/0387848576
+[InfluxDB Documentation](https://docs.influxdata.com/)
+*Purpose-built time-series database for metrics and events. Optimized for high write throughput, downsampling, and retention policies for monitoring data.*
 
-"All of Statistics" https://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/1441923225 
+## Graph Databases
 
-"Advances in Financial ML" (Lopez de Prado) https://www.amazon.com/Advances-Financial-Machine-Learning-Marcos/dp/1119482089
+[Neo4j Documentation](https://neo4j.com/docs/)
+*Leading graph database documentation. Uses Cypher query language for modeling and querying connected data, social networks, and recommendation engines.*
 
-"Linear Algebra Done Right" https://www.amazon.com/dp/0387982582
+# AI & Machine Learning
 
-"Deep Reinforcement Learning" (Yuxi Li) https://arxiv.org/pdf/1810.06339
+## Deep Learning Frameworks
 
-## Options, derivatives, credit, FX, & commodities: 
+[PyTorch Documentation](https://pytorch.org/docs/)
+*Official PyTorch deep learning framework documentation. Dynamic computation graphs, automatic differentiation, GPU acceleration, and rich ecosystem for research and production.*
 
-"Options, Futures, and Other Derivatives" (Hull) https://www.amazon.com/Options-Futures-Other-Derivatives-Global-dp-1292410655
+[PyTorch Tutorials](https://pytorch.org/tutorials/)
+*Comprehensive PyTorch tutorials from basics to advanced. Covers tensors, neural networks, computer vision, NLP, and deploying models for practical learning.*
 
-"Stochastic Volatility Modeling" https://www.amazon.com/Stochastic-Volatility-Modeling-Financial-Mathematics/dp/1482244063
+[TensorFlow Documentation](https://www.tensorflow.org/api_docs)
+*Google's end-to-end ML platform documentation. Provides tools for building, training, and deploying models at scale with strong production support.*
 
-"Value at Risk" https://www.amazon.com/gp/product/0071464956
+[JAX Documentation](https://jax.readthedocs.io/)
+*Google's library for high-performance numerical computing. Combines NumPy API with automatic differentiation, JIT compilation, and vectorization for research.*
 
-"Mathematical Methods for FX" https://www.amazon.com/gp/product/9810248237
+[Keras Documentation](https://keras.io/api/)
+*High-level neural networks API running on TensorFlow. Simplified model building with clear abstractions for rapid experimentation and prototyping.*
 
-"FX Options & Structued Products" https://www.amazon.com/Options-Structured-Products-Wiley-Finance/dp/1118471067 
+## Model Training & Optimization
 
-"Commodities & Commodity Derivatives" https://www.amazon.com/Commodities-Commodity-Derivatives-Modelling-Agriculturals/dp/0470012188 
+[Hugging Face Transformers](https://huggingface.co/docs/transformers/)
+*State-of-the-art NLP library with pretrained models. Provides BERT, GPT, T5, and thousands of models for text classification, generation, and understanding.*
 
-"Managing Credit Risk" (Altman) https://www.amazon.com/Managing-Credit-Risk-Challenge-Financial/dp/0470118725 
+[Hugging Face Datasets](https://huggingface.co/docs/datasets/)
+*Library for accessing and processing ML datasets. Provides efficient loading, caching, and streaming of datasets with unified API across modalities.*
 
-"Credit Risk Modeling" https://www.amazon.com/gp/product/1584889926
+[ONNX (Open Neural Network Exchange)](https://onnx.ai/onnx/)
+*Open format for representing ML models. Enables model portability between frameworks and deployment to various runtimes and hardware accelerators.*
 
-"Bond Markets, Analysis, & Strategies" (Fabozzi) https://www.amazon.com/Bond-Markets-Analysis-Strategies-tenth-dp-026204627X/dp/026204627X/ 
+[DeepSpeed](https://www.deepspeed.ai/getting-started/)
+*Microsoft's deep learning optimization library. Enables training massive models with ZeRO optimization, pipeline parallelism, and memory efficiency.*
 
-"Valuation" (Damodoran - makes both lists) https://www.amazon.com/Investment-Valuation-Techniques-Determining-University/dp/1118130731
+[PyTorch Lightning](https://lightning.ai/docs/pytorch/stable/)
+*High-level PyTorch framework organizing code for research. Handles training loops, distributed training, and logging with minimal boilerplate.*
+
+## Model Serving & Inference
+
+[ONNX Runtime](https://onnxruntime.ai/docs/)
+*High-performance inference engine for ONNX models. Cross-platform acceleration with optimizations for CPU, GPU, and specialized hardware.*
+
+[TensorRT](https://developer.nvidia.com/tensorrt)
+*NVIDIA's SDK for high-performance deep learning inference. Optimizes models for deployment with INT8, FP16 precision, and layer fusion on GPUs.*
+
+[vLLM](https://docs.vllm.ai/)
+*Fast and efficient LLM inference engine. Implements PagedAttention for high throughput, continuous batching, and serving large language models efficiently.*
+
+[llama.cpp](https://github.com/ggerganov/llama.cpp)
+*Efficient LLM inference in C++. Enables running large language models on CPU with quantization, minimal dependencies, and cross-platform support.*
+
+[OpenVINO](https://docs.openvino.ai/)
+*Intel's toolkit for optimizing and deploying computer vision models. Supports inference acceleration on Intel CPUs, GPUs, and VPUs.*
+
+[TorchServe](https://pytorch.org/serve/)
+*PyTorch model serving library. Provides REST APIs, batch inference, metrics, and scalable deployment for PyTorch models in production.*
+
+## MLOps & Experiment Tracking
+
+[MLflow Documentation](https://mlflow.org/docs/latest/)
+*Open-source platform for ML lifecycle management. Tracks experiments, packages models, manages deployments, and provides model registry.*
+
+[Weights & Biases Documentation](https://docs.wandb.ai/)
+*Experiment tracking and model management platform. Visualizes metrics, hyperparameter tuning, model versioning, and collaboration for ML teams.*
+
+[TensorBoard](https://www.tensorflow.org/tensorboard)
+*Visualization toolkit for ML experiments. Displays metrics, graphs, distributions, and embeddings for understanding model training and debugging.*
+
+# Version Control
+
+## Git Documentation
+
+[Pro Git Book](https://git-scm.com/book/en/v2)
+*Comprehensive Git guide covering fundamentals to advanced topics. Explains branching, merging, rebasing, distributed workflows, and Git internals. Essential reference.*
+
+[Git Official Documentation](https://git-scm.com/doc)
+*Complete Git reference documentation. Covers all commands, configuration options, and protocols for version control with detailed explanations and examples.*
+
+[Git Internals](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain)
+*Deep dive into Git's object model and internal architecture. Explains blobs, trees, commits, refs, and how Git stores and retrieves data.*
+
+[GitHub Docs](https://docs.github.com/)
+*Official GitHub documentation for repositories, pull requests, actions, and collaboration features. Covers workflows for modern software development.*
+
+[GitLab Documentation](https://docs.gitlab.com/)
+*Complete GitLab documentation covering DevOps lifecycle. Includes CI/CD, issue tracking, container registry, and self-hosted deployment options.*
+
+## Git Workflows & Best Practices
+
+[Conventional Commits](https://www.conventionalcommits.org/)
+*Specification for structured commit messages. Enables automated changelog generation, semantic versioning, and clear communication of changes.*
+
+[GitFlow Workflow](https://nvie.com/posts/a-successful-git-branching-model/)
+*Popular branching model for managing releases. Defines branch structure for features, releases, hotfixes, and maintaining production code.*
+
+[GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow)
+*Lightweight workflow for continuous deployment. Simplified branching model with main branch and feature branches for rapid iteration.*
+
+# API Technologies & Web Protocols
+
+## RPC & Service Communication
+
+[gRPC Documentation](https://grpc.io/docs/)
+*High-performance RPC framework using Protocol Buffers. Provides efficient binary serialization, streaming, authentication, and language-neutral service definitions.*
+
+[Protocol Buffers Documentation](https://protobuf.dev/)
+*Google's language-neutral serialization format. Defines structured data schemas for efficient, backward-compatible communication between services.*
+
+[Apache Thrift](https://thrift.apache.org/docs/)
+*Cross-language RPC framework from Apache. Defines services with IDL, generates code for multiple languages, and supports binary protocols.*
+
+## GraphQL
+
+[GraphQL Documentation](https://graphql.org/learn/)
+*Query language for APIs providing flexible data fetching. Clients specify exact data requirements, reducing over-fetching and enabling rapid frontend iteration.*
+
+[Apollo GraphQL Documentation](https://www.apollographql.com/docs/)
+*Comprehensive GraphQL platform with server, client, and tools. Provides caching, state management, and federation for building GraphQL APIs.*
+
+## REST & OpenAPI
+
+[OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
+*Standard for describing REST APIs. Enables documentation generation, client SDK creation, and API validation with machine-readable specification.*
+
+[Swagger Documentation](https://swagger.io/docs/)
+*Tools for designing, building, and documenting OpenAPI specifications. Includes Swagger UI for interactive API documentation and testing.*
+
+[REST API Tutorial](https://restfulapi.net/)
+*Guide to designing RESTful APIs. Covers HTTP methods, status codes, resource modeling, versioning, and best practices for web API design.*
+
+## HTTP & Web Standards
+
+[HTTP/2 Specification](https://httpwg.org/specs/rfc7540.html)
+*Official HTTP/2 protocol specification. Introduces multiplexing, server push, header compression for improved web performance over HTTP/1.1.*
+
+[HTTP/3 Explained](https://http3-explained.haxx.se/)
+*Guide to HTTP/3 and QUIC protocol. Explains transition to UDP-based transport, reduced latency, and improved performance for modern web.*
+
+[WebSocket Protocol](https://datatracker.ietf.org/doc/html/rfc6455)
+*RFC specification for WebSocket protocol. Enables bidirectional, full-duplex communication between client and server over single TCP connection.*
+
+# Quantitative Finance
+
+## Risk & Asset Allocation
+
+[Active Portfolio Management](https://www.amazon.com/Active-Portfolio-Management-Quantitative-Controlling/dp/0070248826)
+*Grinold and Kahn's classic on quantitative portfolio management. Covers alpha forecasting, risk models, portfolio optimization, and performance attribution for systematic investment strategies.*
+
+[Quantitative Equity Portfolio Management](https://www.amazon.com/Quantitative-Equity-Portfolio-Management-Second-ebook/dp/B09KF52TKD)
+*Comprehensive guide to systematic equity investing. Details factor models, alpha generation, transaction costs, and implementation of quantitative strategies in production.*
+
+[Quantitative Portfolio Management](https://www.amazon.com/Quantitative-Portfolio-Management-Statistical-Arbitrage)
+*Advanced techniques for statistical arbitrage and quantitative trading. Covers pairs trading, cointegration, mean reversion strategies, and risk management for systematic portfolios.*
+
+[Equity Portfolio Management](https://www.amazon.com/Equity-Portfolio-Management-Frank-Fabozzi/dp/1883249406)
+*Fabozzi's comprehensive guide to equity portfolio construction. Discusses style analysis, attribution, active management strategies, and performance measurement across investment approaches.*
+
+[Advanced Portfolio Management](https://www.amazon.com/Advanced-Portfolio-Management-Fundamental-Investors)
+*Advanced topics in portfolio theory and practice. Bridges fundamental and quantitative approaches with focus on practical implementation and real-world constraints.*
+
+[Modern Investment Management](https://www.amazon.com/Modern-Investment-Management-Equilibrium-Approach/dp/0471124109)
+*Goldman Sachs Asset Management's equilibrium approach by Litterman. Covers Black-Litterman model, tactical asset allocation, and integrating views into portfolio construction.*
+
+## Analysis of Financial Time Series
+
+[Analysis of Financial Time Series](https://www.amazon.com/Analysis-Financial-Time-Ruey-Tsay/dp/0470414359)
+*Tsay's authoritative textbook on econometric modeling of financial data. Covers ARMA, GARCH, volatility modeling, high-frequency data, and multivariate time series with R examples.*
+
+[Applied Econometric Time Series](https://www.amazon.com/Applied-Econometric-Wiley-Probability-Statistics)
+*Practical econometrics focusing on time series methods. Explains unit roots, cointegration, VAR models, and forecasting with focus on applied macroeconomic and financial applications.*
+
+[Econometrics: A Modern Approach](https://www.amazon.com/Introductory-Econometrics-Modern-Approach-MindTap-dp-1337558869/dp/1337558869/)
+*Comprehensive econometrics textbook with modern treatment. Covers regression, panel data, instrumental variables, and time series with emphasis on causal inference and applications.*
+
+[Statistics and Data Analysis for Financial Engineering](https://www.amazon.com/dp/1461427495)
+*Statistical methods tailored for finance. Combines probability theory, statistical inference, regression, and time series analysis with R code for quantitative finance applications.*
+
+## Financial Machine Learning & Statistics
+
+[The Elements of Statistical Learning](https://www.amazon.com/Elements-Statistical-Learning-Prediction-Statistics/dp/0387848576)
+*Classic machine learning textbook by Hastie, Tibshirani, and Friedman. Comprehensive coverage of supervised learning, model selection, regularization, and ensemble methods with mathematical rigor.*
+
+[All of Statistics](https://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/1441923225)
+*Concise overview of modern statistics and machine learning. Covers inference, regression, classification, and nonparametric methods bridging traditional statistics and modern ML.*
+
+[Advances in Financial Machine Learning](https://www.amazon.com/Advances-Financial-Machine-Learning-Marcos/dp/1119482089)
+*Marcos López de Prado's practical guide to ML in finance. Addresses data labeling, feature engineering, backtesting pitfalls, and unique challenges of applying ML to financial markets.*
+
+[Linear Algebra Done Right](https://www.amazon.com/dp/0387982582)
+*Axler's elegant approach to linear algebra emphasizing vector spaces. Essential mathematical foundation for understanding ML algorithms, optimization, and quantitative methods.*
+
+[Deep Reinforcement Learning](https://arxiv.org/pdf/1810.06339)
+*Yuxi Li's comprehensive survey of deep RL methods. Covers DQN, policy gradients, actor-critic, and applications. Relevant for algorithmic trading and dynamic portfolio optimization.*
+
+## Derivatives, Options, Credit, FX & Commodities
+
+[Options, Futures, and Other Derivatives](https://www.amazon.com/Options-Futures-Other-Derivatives-Global-dp-1292410655)
+*Hull's industry-standard derivatives textbook. Comprehensive coverage of pricing, hedging, and risk management for options, futures, swaps, and exotic derivatives with practical focus.*
+
+[Stochastic Volatility Modeling](https://www.amazon.com/Stochastic-Volatility-Modeling-Financial-Mathematics/dp/1482244063)
+*Advanced treatment of volatility modeling. Covers Heston, SABR, and local volatility models. Essential for options trading, risk management, and understanding volatility surface dynamics.*
+
+[Value at Risk](https://www.amazon.com/gp/product/0071464956)
+*Comprehensive guide to VaR methodology for measuring market risk. Covers parametric, historical simulation, and Monte Carlo methods with applications to portfolio risk management.*
+
+[Mathematical Methods for Foreign Exchange](https://www.amazon.com/gp/product/9810248237)
+*Specialized treatment of FX derivatives and market conventions. Covers quanto options, currency triangles, and cross-currency derivatives with focus on practical implementation.*
+
+[FX Options and Structured Products](https://www.amazon.com/Options-Structured-Products-Wiley-Finance/dp/1118471067)
+*Practical guide to FX options markets. Explains vanilla and exotic options, volatility surface construction, barrier options, and structured products used in currency trading.*
+
+[Commodities and Commodity Derivatives](https://www.amazon.com/Commodities-Commodity-Derivatives-Modelling-Agriculturals/dp/0470012188)
+*Specialized resource for commodity markets. Covers futures, options, storage costs, seasonality, and unique features of energy, metals, and agricultural derivatives.*
+
+[Managing Credit Risk](https://www.amazon.com/Managing-Credit-Risk-Challenge-Financial/dp/0470118725)
+*Altman's comprehensive guide to credit risk measurement and management. Covers default probability, credit scoring, portfolio models, and regulatory capital frameworks.*
+
+[Credit Risk Modeling](https://www.amazon.com/gp/product/1584889926)
+*Practical approach to credit risk quantification. Discusses structural models, reduced-form models, credit derivatives pricing, and portfolio credit risk measurement.*
+
+[Bond Markets, Analysis and Strategies](https://www.amazon.com/Bond-Markets-Analysis-Strategies-tenth-dp-026204627X/dp/026204627X/)
+*Fabozzi's authoritative fixed income reference. Covers bond pricing, duration, convexity, term structure models, and portfolio strategies for government and corporate bonds.*
+
+[Investment Valuation](https://www.amazon.com/Investment-Valuation-Techniques-Determining-University/dp/1118130731)
+*Damodaran's comprehensive valuation guide. Covers DCF, relative valuation, option pricing approaches, and practical techniques for valuing companies, bonds, and real assets.*
