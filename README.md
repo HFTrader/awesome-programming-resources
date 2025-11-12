@@ -405,64 +405,6 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 [GNU Assembler (GAS) Documentation](https://sourceware.org/binutils/docs/as/)
 *Documentation for GAS, the assembler in GNU binutils. Uses AT&T syntax by default. Standard assembler for GCC and Linux development.*
 
-# Container & Cloud Native
-
-## Docker & Containers
-
-[Docker Documentation](https://docs.docker.com/)
-*Official Docker documentation covering images, containers, networking, and orchestration. Essential reference for containerization fundamentals and best practices.*
-
-[Docker Best Practices](https://docs.docker.com/develop/dev-best-practices/)
-*Guidelines for building efficient, secure Docker images. Covers layer optimization, security scanning, multi-stage builds, and production deployment strategies.*
-
-[containerd](https://containerd.io/)
-*Industry-standard container runtime used by Docker and Kubernetes. Lightweight daemon managing container lifecycle, images, and storage.*
-
-[Podman Documentation](https://docs.podman.io/)
-*Daemonless container engine compatible with Docker. Rootless containers, pod support, and systemd integration for security-focused environments.*
-
-[BuildKit](https://github.com/moby/buildkit)
-*Modern Docker build backend with parallel execution, caching improvements, and reproducible builds. Powers docker buildx and advanced build features.*
-
-## Kubernetes
-
-[Kubernetes Documentation](https://kubernetes.io/docs/home/)
-*Complete Kubernetes documentation covering concepts, tasks, and API reference. Essential for container orchestration, scaling, and cloud-native deployments.*
-
-[Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
-*Tutorial bootstrapping Kubernetes from scratch without scripts. Teaches deep understanding of components, networking, and security through manual setup.*
-
-[Kubernetes Patterns (Book)](https://www.redhat.com/en/resources/oreilly-kubernetes-patterns-cloud-native-apps)
-*Design patterns for cloud-native applications on Kubernetes. Covers deployment strategies, configuration management, and operational patterns.*
-
-[kubectl Reference](https://kubernetes.io/docs/reference/kubectl/)
-*Complete kubectl command reference. Essential for cluster management, debugging, and resource manipulation in Kubernetes environments.*
-
-## Service Mesh
-
-[Istio Documentation](https://istio.io/latest/docs/)
-*Service mesh providing traffic management, security, and observability. Handles service-to-service communication, mTLS, and advanced routing without code changes.*
-
-[Linkerd Documentation](https://linkerd.io/latest/overview/)
-*Lightweight service mesh focused on simplicity and performance. Provides mutual TLS, load balancing, and observability with minimal configuration.*
-
-[Envoy Proxy Documentation](https://www.envoyproxy.io/docs)
-*High-performance proxy used by Istio and other service meshes. Provides advanced load balancing, observability, and traffic control at L7.*
-
-## Observability
-
-[Prometheus Documentation](https://prometheus.io/docs/)
-*Time-series database and monitoring system for cloud-native applications. De facto standard for Kubernetes metrics collection and alerting.*
-
-[Grafana Documentation](https://grafana.com/docs/)
-*Visualization and analytics platform for metrics, logs, and traces. Creates dashboards from Prometheus, Elasticsearch, and other data sources.*
-
-[Jaeger Tracing](https://www.jaegertracing.io/docs/)
-*Distributed tracing system for monitoring microservices. Tracks requests across services to identify performance bottlenecks and dependencies.*
-
-[OpenTelemetry](https://opentelemetry.io/docs/)
-*Vendor-neutral observability framework for metrics, logs, and traces. Standardizes instrumentation across languages and backends.*
-
 # Rust
 
 ## Official Documentation
@@ -562,31 +504,6 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 [pyenv - Python Version Management](https://github.com/pyenv/pyenv)
 *Tool for managing multiple Python versions. Allows per-project Python version selection, building from source, and switching between interpreter implementations.*
 
-## Web Frameworks
-
-[Django Documentation](https://docs.djangoproject.com/)
-*Comprehensive web framework with batteries included. Provides ORM, admin interface, authentication, and templating. Industry standard for full-featured web applications.*
-
-[Flask Documentation](https://flask.palletsprojects.com/)
-*Lightweight WSGI web framework with minimal boilerplate. Flexible and extensible design for building web applications, APIs, and microservices.*
-
-[FastAPI Documentation](https://fastapi.tiangolo.com/)
-*Modern async web framework for building APIs. Automatic OpenAPI documentation, type hints, async support, and excellent performance. Ideal for REST and GraphQL APIs.*
-
-[Starlette](https://www.starlette.io/)
-*Lightweight ASGI framework for async Python. Foundation for FastAPI, provides routing, WebSocket support, and middleware. Perfect for high-performance async applications.*
-
-## Async Programming
-
-[Asyncio Documentation](https://docs.python.org/3/library/asyncio.html)
-*Official async I/O framework for Python. Provides event loop, coroutines, tasks, and streams for writing concurrent code with async/await syntax.*
-
-[AIOHTTP Documentation](https://docs.aiohttp.org/)
-*Async HTTP client and server library. Enables concurrent web requests, WebSocket support, and building async web services with asyncio integration.*
-
-[Trio - Async I/O Library](https://trio.readthedocs.io/)
-*Pythonic async library with structured concurrency. Provides nurseries for task management, cancellation scopes, and safer patterns than asyncio for complex async code.*
-
 ## Data Science & Scientific Computing
 
 [NumPy Documentation](https://numpy.org/doc/)
@@ -620,182 +537,6 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 
 [mypy - Static Type Checker](https://mypy.readthedocs.io/)
 *Static type checker for Python using type hints. Catches type errors before runtime, improves code documentation, and enables better IDE support.*
-
-# Go
-
-## Official Documentation
-
-[Go Official Documentation](https://go.dev/doc/)
-*Complete Go language documentation and learning resources. Covers installation, tutorials, language specification, and standard library for building efficient concurrent software.*
-
-[Effective Go](https://go.dev/doc/effective_go)
-*Official guide to writing clear, idiomatic Go code. Covers formatting, naming conventions, concurrency patterns, and common idioms. Essential reading for Go developers.*
-
-[A Tour of Go](https://go.dev/tour/)
-*Interactive introduction to Go fundamentals. Covers syntax, types, functions, concurrency, and standard library through executable examples in the browser.*
-
-[Go Language Specification](https://go.dev/ref/spec)
-*Formal specification of Go syntax and semantics. Defines grammar, types, declarations, and execution model for understanding language behavior precisely.*
-
-[Go Standard Library](https://pkg.go.dev/std)
-*Complete reference for Go's standard library. Documents packages for I/O, networking, concurrency, testing, and common tasks with examples and performance characteristics.*
-
-## Concurrency & Performance
-
-[Go Concurrency Patterns](https://go.dev/blog/pipelines)
-*Official guide to Go concurrency patterns. Explains goroutines, channels, select statements, and patterns like pipelines and cancellation for concurrent programs.*
-
-[Go Memory Model](https://go.dev/ref/mem)
-*Formal specification of memory semantics in Go. Defines happens-before relationships, synchronization guarantees, and visibility for writing correct concurrent code.*
-
-[Profiling Go Programs](https://go.dev/blog/pprof)
-*Guide to profiling Go applications using pprof. Covers CPU profiling, memory profiling, goroutine analysis, and identifying performance bottlenecks in production.*
-
-## Web & Networking
-
-[net/http Package](https://pkg.go.dev/net/http)
-*Go's powerful HTTP client and server implementation. Built-in support for HTTP/2, timeouts, middleware patterns, and serving web applications without frameworks.*
-
-[Go gRPC Documentation](https://grpc.io/docs/languages/go/)
-*Official gRPC implementation for Go. Provides high-performance RPC framework with protocol buffers, streaming, and automatic code generation for microservices.*
-
-[Gin Web Framework](https://gin-gonic.com/docs/)
-*Fast HTTP web framework with martini-like API. Provides routing, middleware, JSON validation, and error management for building REST APIs efficiently.*
-
-[Echo Framework](https://echo.labstack.com/docs)
-*High-performance minimalist Go web framework. Features optimized routing, middleware, automatic TLS, and HTTP/2 support for scalable web services.*
-
-## Tools & Libraries
-
-[Go Modules Reference](https://go.dev/ref/mod)
-*Official Go dependency management system. Defines module versioning, dependency resolution, and publishing for reproducible builds and version management.*
-
-[GoReleaser](https://goreleaser.com/)
-*Release automation tool for Go projects. Builds binaries for multiple platforms, creates release notes, publishes to GitHub/GitLab, and handles Docker images.*
-
-[go-chi Router](https://github.com/go-chi/chi)
-*Lightweight composable router for building HTTP services. Provides RESTful routing, middleware, and context management compatible with net/http.*
-
-[Cobra - CLI Library](https://cobra.dev/)
-*Library for creating powerful CLI applications. Used by Kubernetes, Docker, GitHub CLI. Provides subcommands, flags, and automatic help generation.*
-
-# JavaScript & TypeScript
-
-## Official Documentation
-
-[JavaScript MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-*Comprehensive JavaScript reference from Mozilla. Covers language fundamentals, Web APIs, best practices, and modern ECMAScript features with extensive examples.*
-
-[TypeScript Documentation](https://www.typescriptlang.org/docs/)
-*Official TypeScript language documentation. Explains type system, compiler options, integration with JavaScript, and advanced types for building type-safe applications.*
-
-[ECMAScript Specification](https://tc39.es/ecma262/)
-*Official JavaScript language specification. Defines syntax, semantics, and standard library. Reference for understanding exact language behavior and new proposals.*
-
-[TC39 Proposals](https://github.com/tc39/proposals)
-*Tracking repository for JavaScript language proposals. Shows features in development from Stage 0-4, previewing future language capabilities.*
-
-## Runtimes & Platforms
-
-[Node.js Documentation](https://nodejs.org/docs/latest/api/)
-*Official Node.js API documentation. Covers modules, file system, networking, streams, and runtime APIs for server-side JavaScript development.*
-
-[Deno Documentation](https://docs.deno.com/)
-*Modern secure runtime for JavaScript and TypeScript. Built-in TypeScript support, secure by default, modern standard library, and compatibility with Node.js.*
-
-[Bun Documentation](https://bun.sh/docs)
-*Fast all-in-one JavaScript runtime and toolkit. Provides bundler, package manager, test runner, and runtime with extreme performance written in Zig.*
-
-[V8 JavaScript Engine](https://v8.dev/docs)
-*Documentation for V8, Chrome's JavaScript engine. Covers optimization techniques, embedding V8, and understanding performance characteristics for high-performance code.*
-
-## Frontend Frameworks
-
-[React Documentation](https://react.dev/)
-*Official React library documentation. Covers components, hooks, state management, and modern patterns for building user interfaces with declarative approach.*
-
-[Vue.js Documentation](https://vuejs.org/guide/)
-*Progressive JavaScript framework for UIs. Provides reactive data binding, component system, and smooth learning curve for building interactive web applications.*
-
-[Angular Documentation](https://angular.dev/)
-*Comprehensive framework for building web applications. Includes TypeScript, RxJS, dependency injection, and CLI for enterprise-scale frontend development.*
-
-[Svelte Documentation](https://svelte.dev/docs)
-*Compiler-based framework generating optimized vanilla JavaScript. No runtime overhead, reactive by default, simple syntax for building fast web applications.*
-
-## Build Tools & Bundlers
-
-[Vite Documentation](https://vitejs.dev/guide/)
-*Next-generation frontend build tool. Lightning-fast HMR, optimized builds with Rollup, and native ES modules for modern web development workflow.*
-
-[Webpack Documentation](https://webpack.js.org/concepts/)
-*Powerful module bundler for JavaScript applications. Provides code splitting, loaders, plugins, and optimization for complex frontend build requirements.*
-
-[esbuild Documentation](https://esbuild.github.io/)
-*Extremely fast JavaScript bundler written in Go. 10-100x faster than alternatives, supports TypeScript, JSX, tree shaking, and minification.*
-
-[Rollup Documentation](https://rollupjs.org/introduction/)
-*Module bundler for JavaScript libraries. Focuses on ES modules, tree shaking, and generating efficient bundles for library distribution.*
-
-## Package Management
-
-[npm Documentation](https://docs.npmjs.com/)
-*Default package manager for Node.js. Manages dependencies, scripts, publishing, and registry access for JavaScript ecosystem packages.*
-
-[pnpm Documentation](https://pnpm.io/)
-*Fast, disk-efficient package manager. Uses content-addressable storage to save disk space and speed, strict dependency resolution, and monorepo support.*
-
-[Yarn Documentation](https://yarnpkg.com/)
-*Alternative package manager with deterministic installs. Provides workspaces for monorepos, Plug'n'Play for faster installs, and improved security.*
-
-# WebAssembly
-
-## Official Documentation
-
-[WebAssembly Specification](https://webassembly.github.io/spec/)
-*Official WebAssembly specification defining instruction set, binary format, and execution semantics. Reference for implementing runtimes and understanding Wasm internals.*
-
-[WebAssembly MDN Documentation](https://developer.mozilla.org/en-US/docs/WebAssembly)
-*Practical guide to using WebAssembly in web browsers. Covers JavaScript API, loading modules, and integrating Wasm with web applications.*
-
-[WebAssembly.org](https://webassembly.org/)
-*Official WebAssembly website with introductions, use cases, and getting started guides. Central hub for community resources and specifications.*
-
-## Tooling & Runtimes
-
-[Wasmtime - Standalone WebAssembly Runtime](https://wasmtime.dev/)
-*Fast and secure WebAssembly runtime from Bytecode Alliance. Implements WASI for running Wasm outside browsers with sandboxing and JIT compilation.*
-
-[WasmEdge - Lightweight Runtime](https://wasmedge.org/)
-*High-performance Wasm runtime optimized for edge computing and cloud-native applications. Supports WASI, networking extensions, and serverless deployments.*
-
-[WASI (WebAssembly System Interface)](https://wasi.dev/)
-*System interface standard for WebAssembly. Provides portable access to files, networking, and OS resources for non-browser environments.*
-
-[wasm-pack - Rust to WebAssembly](https://rustwasm.github.io/wasm-pack/)
-*Build tool for compiling Rust to WebAssembly. Handles npm integration, JavaScript bindings generation, and packaging for web deployment.*
-
-[Emscripten - C/C++ to WebAssembly](https://emscripten.org/)
-*Compiler toolchain converting C/C++ to WebAssembly. Provides POSIX emulation, SDL, OpenGL support for porting existing applications to web.*
-
-## Performance & Optimization
-
-[WebAssembly Performance](https://webassembly.org/docs/use-cases/)
-*Use cases and performance characteristics of WebAssembly. Explains when Wasm provides benefits over JavaScript and optimization strategies.*
-
-[SIMD in WebAssembly](https://github.com/WebAssembly/simd)
-*Specification for SIMD (Single Instruction Multiple Data) in WebAssembly. Enables vectorized operations for compute-intensive tasks like graphics and ML.*
-
-[WebAssembly Threads](https://github.com/WebAssembly/threads)
-*Specification for multi-threading support in WebAssembly. Defines shared memory, atomic operations, and thread coordination primitives.*
-
-## Books & Tutorials
-
-[Rust and WebAssembly Book](https://rustwasm.github.io/docs/book/)
-*Guide to building WebAssembly applications with Rust. Covers tooling, optimization, JavaScript interop, and deploying Rust code to browsers.*
-
-[WebAssembly: The Definitive Guide](https://www.oreilly.com/library/view/webassembly-the-definitive/9781492089834/)
-*Comprehensive book on WebAssembly covering architecture, tooling, and practical applications. Explains compilation, runtimes, and real-world use cases.*
 
 # Systems Programming
 
@@ -956,75 +697,13 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 [Latency Numbers Every Programmer Should Know](https://gist.github.com/jboner/2841832)
 *Reference card showing latency of common operations. Essential for developing performance intuition and understanding operation costs.*
 
-# Security & Cryptography
-
-## Cryptography
-
-[The Cryptopals Crypto Challenges](https://cryptopals.com/)
-*Hands-on cryptography challenges teaching concepts through breaking implementations. Learn by attacking weak crypto including AES, RSA, and padding oracles.*
-
-[A Graduate Course in Applied Cryptography](https://toc.cryptobook.us/) [PDF](papers/cryptography-course.pdf)
-*Free comprehensive textbook by Boneh and Shoup. Covers modern cryptographic primitives, protocols, and mathematical foundations at graduate level.*
-
-[Practical Cryptography for Developers](https://cryptobook.nakov.com/)
-*Developer-focused guide to using cryptography correctly. Explains hashing, encryption, signatures, and common pitfalls with code examples.*
+# Cryptography
 
 [OpenSSL Documentation](https://www.openssl.org/docs/)
-*Documentation for OpenSSL cryptography library. Industry-standard implementation of TLS, certificates, and cryptographic primitives.*
+*Documentation for OpenSSL cryptography library. Industry-standard implementation of TLS, certificates, and cryptographic primitives for secure exchange connections.*
 
 [libsodium Documentation](https://doc.libsodium.org/)
 *Easy-to-use modern crypto library with safe defaults. Provides authenticated encryption, signatures, and key exchange resistant to common mistakes.*
-
-[BoringSSL](https://boringssl.googlesource.com/boringssl/)
-*Google's fork of OpenSSL used in Chrome and Android. Focuses on simplicity, security, and eliminating legacy features.*
-
-## Application Security
-
-[OWASP Top 10](https://owasp.org/www-project-top-ten/)
-*List of most critical web application security risks. Essential awareness for developers including injection, broken auth, and XSS.*
-
-[OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/)
-*Collection of security best practices and defensive techniques. Covers authentication, input validation, cryptography, and common vulnerabilities.*
-
-[CWE - Common Weakness Enumeration](https://cwe.mitre.org/)
-*Comprehensive catalog of software security weaknesses. Provides taxonomy for identifying and communicating vulnerability types.*
-
-[CERT C Coding Standard](https://wiki.sei.cmu.edu/confluence/display/c/SEI+CERT+C+Coding+Standard)
-*Secure coding guidelines for C. Covers undefined behavior, buffer overflows, integer overflow, and common security pitfalls.*
-
-[CERT C++ Coding Standard](https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=88046682)
-*Secure C++ programming guidelines. Addresses C++-specific issues like RAII, exceptions, templates, and modern C++ security concerns.*
-
-## Reverse Engineering & Binary Analysis
-
-[Radare2 Book](https://book.rada.re/)
-*Documentation for radare2 reverse engineering framework. Covers disassembly, debugging, binary patching, and exploit development.*
-
-[Ghidra Documentation](https://ghidra-sre.org/)
-*Documentation for NSA's Ghidra reverse engineering tool. Powerful disassembler and decompiler with scripting for automated analysis.*
-
-[Binary Ninja](https://binary.ninja/)
-*Commercial reverse engineering platform with clean UI and powerful API. Excellent for malware analysis, vulnerability research, and binary understanding.*
-
-[Reverse Engineering for Beginners (RE4B)](https://beginners.re/)
-*Free book teaching reverse engineering through examples. Covers x86, ARM, and MIPS with practical debugging and analysis techniques.*
-
-[Practical Binary Analysis](https://practicalbinaryanalysis.com/)
-*Book on binary analysis covering formats, disassembly, and dynamic analysis. Teaches building analysis tools with practical examples.*
-
-## Vulnerability Research
-
-[The Art of Software Security Assessment](https://www.amazon.com/Art-Software-Security-Assessment-Vulnerabilities/dp/0321444426)
-*Comprehensive guide to finding security vulnerabilities. Covers code auditing methodology, common flaws, and exploitation techniques.*
-
-[Fuzzing Book](https://www.fuzzingbook.org/)
-*Interactive book teaching fuzzing and software testing. Covers mutation, generation-based, grammar-based fuzzing with Python examples.*
-
-[AFL++ (American Fuzzy Lop)](https://github.com/AFLplusplus/AFLplusplus)
-*Advanced fuzzer for finding bugs through instrumented execution. Industry-standard coverage-guided fuzzing tool for vulnerability discovery.*
-
-[libFuzzer Documentation](https://llvm.org/docs/LibFuzzer.html)
-*In-process coverage-guided fuzzer from LLVM. Integrates with SanitizerCoverage for effective testing of libraries and APIs.*
 
 # Distributed Systems
 
@@ -1054,47 +733,10 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 [Bigtable: A Distributed Storage System for Structured Data](papers/bigtable-google.pdf)
 *Google's wide-column distributed database. Influenced HBase, Cassandra, and cloud-native database architectures.*
 
-## Consensus & Coordination
-
-[Raft Consensus Algorithm](https://raft.github.io/)
-*Interactive visualization and documentation for Raft. Easier-to-understand consensus algorithm compared to Paxos.*
-
-[etcd Documentation](https://etcd.io/docs/)
-*Distributed key-value store using Raft for Kubernetes and service discovery. Industry-standard for configuration and coordination.*
-
-[Apache ZooKeeper](https://zookeeper.apache.org/doc/current/)
-*Centralized coordination service for distributed applications. Provides naming, configuration, synchronization, and group services.*
-
-[Consul by HashiCorp](https://www.consul.io/docs)
-*Service mesh and service discovery platform. Combines service registry, health checking, and KV store with Raft consensus.*
-
-## Distributed Databases
-
-[CockroachDB Architecture](https://www.cockroachlabs.com/docs/stable/architecture/overview.html)
-*NewSQL database combining SQL with horizontal scalability. Uses Raft for consistency and provides distributed ACID transactions.*
-
-[TiDB Documentation](https://docs.pingcap.com/tidb/stable)
-*MySQL-compatible distributed database. Separates compute and storage layers, uses Raft for replication.*
-
-[FoundationDB Architecture](https://apple.github.io/foundationdb/)
-*Transactional key-value store with deterministic simulation testing. Provides strong consistency foundation for building distributed systems.*
-
-## Message Queues & Event Streaming
+## Message Streaming
 
 [Apache Kafka Documentation](https://kafka.apache.org/documentation/)
-*Distributed streaming platform for high-throughput messaging. Industry standard for event streaming, log aggregation, and real-time data pipelines.*
-
-[Kafka: The Definitive Guide](https://www.confluent.io/resources/kafka-the-definitive-guide/)
-*Comprehensive book on Kafka architecture and usage. Covers producers, consumers, stream processing, and operational best practices.*
-
-[NATS Documentation](https://docs.nats.io/)
-*Lightweight, high-performance messaging system. Simple pub-sub with JetStream for persistence and streaming.*
-
-[RabbitMQ Documentation](https://www.rabbitmq.com/documentation.html)
-*AMQP message broker with complex routing. Popular for task queues, microservices communication, and asynchronous processing.*
-
-[Apache Pulsar Documentation](https://pulsar.apache.org/docs/)
-*Cloud-native distributed messaging with multi-tenancy. Separates serving and storage layers, supports both queue and stream semantics.*
+*Distributed streaming platform for high-throughput messaging. Used for market data distribution, log aggregation, and non-latency-critical data pipelines in trading infrastructure.*
 
 ## Network Programming
 
@@ -1107,19 +749,10 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 [QUIC Protocol](https://www.chromium.org/quic/)
 *Modern transport protocol built on UDP providing TLS encryption and multiplexing. Used by HTTP/3, faster connection establishment than TCP.*
 
-## Books & Resources
+## Books
 
 [Designing Data-Intensive Applications (Martin Kleppmann)](https://dataintensive.net/)
-*Comprehensive guide to distributed systems and data architecture. Covers replication, partitioning, transactions, and consistency models. Essential reading.*
-
-[Distributed Systems for Fun and Profit](http://book.mixu.net/distsys/)
-*Free online book covering distributed systems fundamentals. Explains time, replication, and consistency in accessible manner.*
-
-[The System Design Primer](https://github.com/donnemartin/system-design-primer)
-*Curated collection of system design resources. Covers scalability, databases, caching, load balancing for interview preparation and learning.*
-
-[Awesome Distributed Systems](https://github.com/theanalyst/awesome-distributed-systems)
-*Curated list of distributed systems papers, books, and resources. Organized collection for deep learning about distributed computing.*
+*Comprehensive guide to distributed systems and data architecture. Covers replication, partitioning, transactions, and consistency models. Essential reading for understanding system design.*
 
 # Databases
 
@@ -1140,19 +773,10 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 [Use The Index, Luke](https://use-the-index-luke.com/)
 *Guide to database performance for developers. Explains how indexes work, query optimization, and writing efficient SQL across multiple database systems.*
 
-## NoSQL Databases
-
-[MongoDB Documentation](https://www.mongodb.com/docs/)
-*Official MongoDB document database documentation. Covers data modeling, queries, aggregation, replication, and sharding for flexible schema applications.*
+## In-Memory & Caching
 
 [Redis Documentation](https://redis.io/docs/)
 *Documentation for Redis in-memory data structure store. Used for caching, session storage, pub/sub messaging, and real-time analytics with microsecond latency.*
-
-[Cassandra Documentation](https://cassandra.apache.org/doc/latest/)
-*Apache Cassandra distributed NoSQL database documentation. Provides high availability, linear scalability, and tunable consistency for massive datasets.*
-
-[DynamoDB Documentation](https://docs.aws.amazon.com/dynamodb/)
-*AWS DynamoDB serverless key-value database documentation. Fully managed, single-digit millisecond performance, automatic scaling for cloud-native applications.*
 
 ## Time Series & Analytics
 
@@ -1164,151 +788,6 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 
 [InfluxDB Documentation](https://docs.influxdata.com/)
 *Purpose-built time-series database for metrics and events. Optimized for high write throughput, downsampling, and retention policies for monitoring data.*
-
-## Graph Databases
-
-[Neo4j Documentation](https://neo4j.com/docs/)
-*Leading graph database documentation. Uses Cypher query language for modeling and querying connected data, social networks, and recommendation engines.*
-
-# AI & Machine Learning
-
-## Deep Learning Frameworks
-
-[PyTorch Documentation](https://pytorch.org/docs/)
-*Official PyTorch deep learning framework documentation. Dynamic computation graphs, automatic differentiation, GPU acceleration, and rich ecosystem for research and production.*
-
-[PyTorch Tutorials](https://pytorch.org/tutorials/)
-*Comprehensive PyTorch tutorials from basics to advanced. Covers tensors, neural networks, computer vision, NLP, and deploying models for practical learning.*
-
-[TensorFlow Documentation](https://www.tensorflow.org/api_docs)
-*Google's end-to-end ML platform documentation. Provides tools for building, training, and deploying models at scale with strong production support.*
-
-[JAX Documentation](https://jax.readthedocs.io/)
-*Google's library for high-performance numerical computing. Combines NumPy API with automatic differentiation, JIT compilation, and vectorization for research.*
-
-[Keras Documentation](https://keras.io/api/)
-*High-level neural networks API running on TensorFlow. Simplified model building with clear abstractions for rapid experimentation and prototyping.*
-
-## Model Training & Optimization
-
-[Hugging Face Transformers](https://huggingface.co/docs/transformers/)
-*State-of-the-art NLP library with pretrained models. Provides BERT, GPT, T5, and thousands of models for text classification, generation, and understanding.*
-
-[Hugging Face Datasets](https://huggingface.co/docs/datasets/)
-*Library for accessing and processing ML datasets. Provides efficient loading, caching, and streaming of datasets with unified API across modalities.*
-
-[ONNX (Open Neural Network Exchange)](https://onnx.ai/onnx/)
-*Open format for representing ML models. Enables model portability between frameworks and deployment to various runtimes and hardware accelerators.*
-
-[DeepSpeed](https://www.deepspeed.ai/getting-started/)
-*Microsoft's deep learning optimization library. Enables training massive models with ZeRO optimization, pipeline parallelism, and memory efficiency.*
-
-[PyTorch Lightning](https://lightning.ai/docs/pytorch/stable/)
-*High-level PyTorch framework organizing code for research. Handles training loops, distributed training, and logging with minimal boilerplate.*
-
-## Model Serving & Inference
-
-[ONNX Runtime](https://onnxruntime.ai/docs/)
-*High-performance inference engine for ONNX models. Cross-platform acceleration with optimizations for CPU, GPU, and specialized hardware.*
-
-[TensorRT](https://developer.nvidia.com/tensorrt)
-*NVIDIA's SDK for high-performance deep learning inference. Optimizes models for deployment with INT8, FP16 precision, and layer fusion on GPUs.*
-
-[vLLM](https://docs.vllm.ai/)
-*Fast and efficient LLM inference engine. Implements PagedAttention for high throughput, continuous batching, and serving large language models efficiently.*
-
-[llama.cpp](https://github.com/ggerganov/llama.cpp)
-*Efficient LLM inference in C++. Enables running large language models on CPU with quantization, minimal dependencies, and cross-platform support.*
-
-[OpenVINO](https://docs.openvino.ai/)
-*Intel's toolkit for optimizing and deploying computer vision models. Supports inference acceleration on Intel CPUs, GPUs, and VPUs.*
-
-[TorchServe](https://pytorch.org/serve/)
-*PyTorch model serving library. Provides REST APIs, batch inference, metrics, and scalable deployment for PyTorch models in production.*
-
-## MLOps & Experiment Tracking
-
-[MLflow Documentation](https://mlflow.org/docs/latest/)
-*Open-source platform for ML lifecycle management. Tracks experiments, packages models, manages deployments, and provides model registry.*
-
-[Weights & Biases Documentation](https://docs.wandb.ai/)
-*Experiment tracking and model management platform. Visualizes metrics, hyperparameter tuning, model versioning, and collaboration for ML teams.*
-
-[TensorBoard](https://www.tensorflow.org/tensorboard)
-*Visualization toolkit for ML experiments. Displays metrics, graphs, distributions, and embeddings for understanding model training and debugging.*
-
-# Version Control
-
-## Git Documentation
-
-[Pro Git Book](https://git-scm.com/book/en/v2)
-*Comprehensive Git guide covering fundamentals to advanced topics. Explains branching, merging, rebasing, distributed workflows, and Git internals. Essential reference.*
-
-[Git Official Documentation](https://git-scm.com/doc)
-*Complete Git reference documentation. Covers all commands, configuration options, and protocols for version control with detailed explanations and examples.*
-
-[Git Internals](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain)
-*Deep dive into Git's object model and internal architecture. Explains blobs, trees, commits, refs, and how Git stores and retrieves data.*
-
-[GitHub Docs](https://docs.github.com/)
-*Official GitHub documentation for repositories, pull requests, actions, and collaboration features. Covers workflows for modern software development.*
-
-[GitLab Documentation](https://docs.gitlab.com/)
-*Complete GitLab documentation covering DevOps lifecycle. Includes CI/CD, issue tracking, container registry, and self-hosted deployment options.*
-
-## Git Workflows & Best Practices
-
-[Conventional Commits](https://www.conventionalcommits.org/)
-*Specification for structured commit messages. Enables automated changelog generation, semantic versioning, and clear communication of changes.*
-
-[GitFlow Workflow](https://nvie.com/posts/a-successful-git-branching-model/)
-*Popular branching model for managing releases. Defines branch structure for features, releases, hotfixes, and maintaining production code.*
-
-[GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow)
-*Lightweight workflow for continuous deployment. Simplified branching model with main branch and feature branches for rapid iteration.*
-
-# API Technologies & Web Protocols
-
-## RPC & Service Communication
-
-[gRPC Documentation](https://grpc.io/docs/)
-*High-performance RPC framework using Protocol Buffers. Provides efficient binary serialization, streaming, authentication, and language-neutral service definitions.*
-
-[Protocol Buffers Documentation](https://protobuf.dev/)
-*Google's language-neutral serialization format. Defines structured data schemas for efficient, backward-compatible communication between services.*
-
-[Apache Thrift](https://thrift.apache.org/docs/)
-*Cross-language RPC framework from Apache. Defines services with IDL, generates code for multiple languages, and supports binary protocols.*
-
-## GraphQL
-
-[GraphQL Documentation](https://graphql.org/learn/)
-*Query language for APIs providing flexible data fetching. Clients specify exact data requirements, reducing over-fetching and enabling rapid frontend iteration.*
-
-[Apollo GraphQL Documentation](https://www.apollographql.com/docs/)
-*Comprehensive GraphQL platform with server, client, and tools. Provides caching, state management, and federation for building GraphQL APIs.*
-
-## REST & OpenAPI
-
-[OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-*Standard for describing REST APIs. Enables documentation generation, client SDK creation, and API validation with machine-readable specification.*
-
-[Swagger Documentation](https://swagger.io/docs/)
-*Tools for designing, building, and documenting OpenAPI specifications. Includes Swagger UI for interactive API documentation and testing.*
-
-[REST API Tutorial](https://restfulapi.net/)
-*Guide to designing RESTful APIs. Covers HTTP methods, status codes, resource modeling, versioning, and best practices for web API design.*
-
-## HTTP & Web Standards
-
-[HTTP/2 Specification](https://httpwg.org/specs/rfc7540.html)
-*Official HTTP/2 protocol specification. Introduces multiplexing, server push, header compression for improved web performance over HTTP/1.1.*
-
-[HTTP/3 Explained](https://http3-explained.haxx.se/)
-*Guide to HTTP/3 and QUIC protocol. Explains transition to UDP-based transport, reduced latency, and improved performance for modern web.*
-
-[WebSocket Protocol](https://datatracker.ietf.org/doc/html/rfc6455)
-*RFC specification for WebSocket protocol. Enables bidirectional, full-duplex communication between client and server over single TCP connection.*
 
 # Quantitative Finance
 
