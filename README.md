@@ -46,11 +46,8 @@ The code inside **substack** was moved to [AssemblyTales](https://github.com/HFT
 [AMD Software Optimization Guide - Latest](https://www.amd.com/en/search/documentation/hub.html)
 *AMD's recommendations for optimizing code on Zen architectures. Covers microarchitecture-specific details, instruction scheduling, and cache optimization for EPYC and Ryzen processors.*
 
-[Performance Tuning Guidelines for AMD EPYC 9004 Series (Genoa)](https://www.amd.com/en/developer/resources/technical-publications.html)
-*Specific tuning guide for latest EPYC processors. Details NUMA topology, memory configuration, core chiplet design, and workload-specific optimization strategies for server deployments.*
-
-[AMD EPYC 4th Gen (Genoa) Tuning Guide](https://www.amd.com/en/developer/resources/technical-publications.html)
-*Platform-level tuning for Genoa systems including BIOS settings, OS configuration, and performance monitoring. Essential for extracting maximum performance in HPC and datacenter environments.*
+[AMD EPYC Tuning Guides](https://www.amd.com/en/search/documentation/hub.html#sortCriteria=%40amd_release_date%20descending&f-amd_document_type=Tuning%20Guides&f-amd_archive_status=Active&f-amd_product_brand=EPYC)
+*Official AMD EPYC tuning guides covering NUMA topology, memory configuration, BIOS settings, OS configuration, and workload-specific optimization strategies for server deployments.*
 
 [AMD Zen 5 Architecture](https://www.amd.com/en/products/specifications/processors.html)
 *Latest Zen 5 microarchitecture in EPYC 9005 and Ryzen 9000 series. Improved IPC, AVX-512 support, enhanced branch prediction, and optimizations for AI and cloud workloads.*
@@ -97,8 +94,8 @@ The code inside **substack** was moved to [AssemblyTales](https://github.com/HFT
 [Xilinx Design Hubs](https://www.xilinx.com/support/documentation-navigation/design-hubs.html)
 *Organized collection of Xilinx FPGA documentation by application domain. Central portal for finding UltraScale+, Versal, and Zynq technical references, tutorials, and design guides.*
 
-[Xilinx Documentation Portal](https://docs.xilinx.com/home)
-*Searchable repository of all Xilinx/AMD FPGA documentation. Includes user guides, data sheets, application notes, and IP core documentation for entire product line.*
+[AMD Technical Information Portal (formerly Xilinx Documentation)](https://docs.amd.com/)
+*Searchable repository of all AMD/Xilinx FPGA documentation. Includes user guides, data sheets, application notes, and IP core documentation for entire product line.*
 
 [AMD Xilinx Vitis Unified Software Platform](https://www.xilinx.com/products/design-tools/vitis.html)
 *Modern development environment for Xilinx FPGAs supporting C/C++, OpenCL, and RTL. Enables heterogeneous computing with software-like programming models for hardware acceleration.*
@@ -139,7 +136,7 @@ The code inside **substack** was moved to [AssemblyTales](https://github.com/HFT
 [HIP Programming Guide](https://rocm.docs.amd.com/projects/HIP/en/latest/)
 *Guide to HIP (Heterogeneous-Compute Interface for Portability), AMD's CUDA-compatible API. Enables code portability between NVIDIA and AMD GPUs with minimal changes.*
 
-[ROCm Libraries](https://rocm.docs.amd.com/en/latest/reference/rocm-libraries.html)
+[ROCm Libraries](https://rocm.docs.amd.com/en/latest/)
 *Collection of GPU-accelerated libraries for AMD GPUs including rocBLAS, rocFFT, and MIOpen. AMD equivalents to CUDA libraries for compute and deep learning.*
 
 ## OpenCL
@@ -185,7 +182,7 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 [Linux man-pages project](https://www.kernel.org/doc/man-pages/)
 *Canonical source for Linux manual pages documenting system calls, library functions, and file formats. The authoritative reference for Linux-specific API behavior.*
 
-[Advanced Programming in the UNIX Environment (APUE)](https://www.apuebook.com/)
+[Advanced Programming in the UNIX Environment (APUE)](https://www.informit.com/store/advanced-programming-in-the-unix-environment-9780321637734)
 *Classic book on Unix systems programming covering files, processes, signals, IPC, and threads. Widely regarded as the most comprehensive Unix programming reference.*
 
 ## System Programming
@@ -481,8 +478,8 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 [Python Language Reference](https://docs.python.org/3/reference/)
 *Formal specification of Python syntax and semantics. Defines language grammar, data model, execution model, and built-in types for understanding Python behavior.*
 
-[What's New in Python 3.13](https://docs.python.org/3/whatsnew/3.13.html)
-*Summary of latest Python release features and improvements. Tracks new syntax, standard library additions, performance enhancements, and deprecations.*
+[What's New in Python 3.14](https://docs.python.org/3/whatsnew/3.14.html)
+*Summary of latest Python release features and improvements. Includes template strings (PEP 750), deferred annotations (PEP 649), multiple interpreters, and free-threaded mode improvements.*
 
 ## Package Management & Tools
 
@@ -649,9 +646,6 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 [ARM Neon Programmer's Guide](https://developer.arm.com/architectures/instruction-sets/intrinsics/)
 *SIMD programming guide for ARM processors. Essential for vectorizing code on mobile, embedded, and server ARM platforms.*
 
-[SIMD for C++ Developers](https://const.me/articles/simd/simd.pdf)
-*Practical guide to SIMD programming in C++. Explains vectorization concepts, intrinsics usage, and optimization patterns.*
-
 [Highway - Portable SIMD Library](https://github.com/google/highway)
 *Google's library for portable SIMD code. Single source compiles to SSE, AVX, NEON, and other architectures with near-native performance.*
 
@@ -682,9 +676,6 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 
 [Cache-Oblivious Algorithms](https://en.wikipedia.org/wiki/Cache-oblivious_algorithm)
 *Algorithms that perform well across cache hierarchies without tuning. Theoretical foundation for portable performance optimization.*
-
-[ACCU - Cache-Friendly Code](https://accu.org/journals/overload/12/63/kilpatrick_268/)
-*Practical guide to writing cache-efficient code. Covers data layout, access patterns, and techniques for reducing cache misses.*
 
 ## Performance Books & Papers
 
