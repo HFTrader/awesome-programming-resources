@@ -72,23 +72,6 @@ The code inside **substack** was moved to [AssemblyTales](https://github.com/HFT
 [Apple Silicon M-Series Documentation](https://developer.apple.com/documentation/apple-silicon)
 *Official Apple documentation for developing and optimizing applications on M1/M2/M3/M4 chips. Covers architecture-specific features, performance guidelines, and Rosetta 2 translation.*
 
-[Apple M4 Architecture](https://www.apple.com/newsroom/2024/05/apple-introduces-m4-chip/)
-*Apple's latest chip built on 3nm process with enhanced Neural Engine. Features up to 10-core CPU, 10-core GPU, and significant ML performance improvements for AI workloads.*
-
-[AWS Graviton Performance Runbook](https://github.com/aws/aws-graviton-getting-started)
-*AWS's practical guide to optimizing workloads for Graviton processors. Includes compiler flags, library recommendations, and performance tuning for cloud-native ARM deployments.*
-
-## RISC-V Architecture
-
-[RISC-V Instruction Set Manual - Latest Ratified](https://github.com/riscv/riscv-isa-manual/releases)
-*Official specification for the open RISC-V ISA. Covers base integer instructions, extensions, and privileged architecture. Essential for anyone working with RISC-V hardware or simulators.*
-
-[RISC-V Assembly Programmer's Manual](https://github.com/riscv-non-isa/riscv-asm-manual)
-*Practical guide to RISC-V assembly programming including pseudoinstructions, calling conventions, and common patterns. Useful for compiler development and low-level RISC-V programming.*
-
-[RISC-V Vector Extension Specification](https://github.com/riscv/riscv-v-spec)
-*Specification for RISC-V's vector extension supporting scalable SIMD operations. Important for understanding vectorization capabilities on emerging RISC-V processors.*
-
 # FPGA
 
 [Xilinx Design Hubs](https://www.xilinx.com/support/documentation-navigation/design-hubs.html)
@@ -610,6 +593,21 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 [Concurrency Freaks](http://concurrencyfreaks.blogspot.com/)
 *Blog analyzing concurrent algorithms and data structures. Deep technical analysis of lock-free programming patterns and performance characteristics.*
 
+[Preshing on Programming](https://preshing.com/archives/)
+*Jeff Preshing's blog on lock-free programming, memory ordering, and atomics. Clearest available explanations of acquire/release semantics, memory barriers, and the C++ memory model.*
+
+[1024cores](https://www.1024cores.net/)
+*Dmitry Vyukov's collection of lock-free algorithms, queues, and synchronization primitives. Reference implementations used throughout high-performance systems including Go's runtime.*
+
+[What Every Systems Programmer Should Know About Concurrency](https://assets.bitbashing.io/papers/concurrency-primer.pdf)
+*Matt Kline's concise primer on memory ordering, atomics, and the hardware/software contract. The fastest path to understanding why concurrent code breaks.*
+
+[The LMAX Disruptor Paper](https://lmax-exchange.github.io/disruptor/disruptor.html)
+*Architecture paper describing the LMAX exchange's single-threaded ring buffer design achieving 6M TPS. Foundational reading for low-latency event processing and mechanical sympathy.*
+
+[Mechanical Sympathy (Martin Thompson)](https://mechanical-sympathy.blogspot.com/)
+*Martin Thompson's blog on hardware-aware software design. Covers cache lines, false sharing, queues, and the principles behind LMAX and Aeron.*
+
 # Performance Engineering
 
 ## Performance Analysis & Profiling
@@ -687,6 +685,62 @@ The GNU C Library Reference Manual [PDF](papers/glibc-manual.pdf) [HTML](https:/
 
 [Latency Numbers Every Programmer Should Know](https://gist.github.com/jboner/2841832)
 *Reference card showing latency of common operations. Essential for developing performance intuition and understanding operation costs.*
+
+[Performance Analysis and Tuning on Modern CPUs (Denis Bakhvalov)](https://book.easyperf.net/perf_book)
+*Free book covering top-down microarchitecture analysis, hardware performance counters, and CPU-aware optimization. Modern, practical companion to Agner Fog's manuals.*
+
+[Algorithmica - HPC Book](https://en.algorithmica.org/hpc/)
+*Free online textbook on high-performance computing covering SIMD, cache hierarchy, instruction-level parallelism, and algorithm-level optimization with worked examples.*
+
+[Computer Systems: A Programmer's Perspective (CSAPP)](https://csapp.cs.cmu.edu/)
+*Bryant and O'Hallaron's textbook bridging hardware and software. Covers machine-level code, memory hierarchy, linking, exceptions, and concurrency from a programmer's perspective.*
+
+# High-Frequency Trading & Low-Latency Systems
+
+## Market Data & Exchange Protocols
+
+[FIX Protocol Specifications](https://www.fixtrading.org/standards/)
+*Official FIX protocol standards for electronic trading. Covers session layer, application messages, and FIXT for order routing and execution across global venues.*
+
+[Nasdaq ITCH Specification](https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHspecification.pdf)
+*Nasdaq's binary market data protocol specification. Reference for order book reconstruction, exchange feed handlers, and understanding direct market data formats.*
+
+[Nasdaq OUCH Specification](https://www.nasdaqtrader.com/content/technicalsupport/specifications/TradingProducts/OUCH4.2.pdf)
+*Nasdaq's binary order entry protocol. Defines the lowest-latency interface for sending orders to the exchange matching engine.*
+
+[CME MDP 3.0 Specification](https://www.cmegroup.com/confluence/display/EPICSANDBOX/MDP+3.0+-+Market+Data)
+*CME Group's Simple Binary Encoding (SBE) market data protocol. Reference for futures and options market data handlers in HFT systems.*
+
+## Low-Latency Networking
+
+[Aeron Messaging](https://github.com/real-logic/aeron)
+*Martin Thompson's efficient reliable UDP unicast and multicast messaging library. Used in production trading systems for sub-microsecond IPC and cluster communication.*
+
+[Onload / TCPDirect (AMD/Solarflare)](https://www.xilinx.com/applications/data-center/network-acceleration/onload.html)
+*Kernel-bypass user-space networking stack for Solarflare NICs. Industry-standard for ultra-low-latency TCP/UDP in trading applications, eliminating kernel overhead.*
+
+[Mellanox VMA / libibverbs](https://network.nvidia.com/products/software/accelerator-software/vma/)
+*NVIDIA/Mellanox kernel-bypass libraries for ConnectX NICs. Provides RDMA verbs and socket acceleration used in HFT and HPC clusters.*
+
+[ef_vi Documentation](https://docs.amd.com/r/en-US/onload-user-guide-v9-0/Introduction-to-ef_vi)
+*AMD/Solarflare's lowest-level kernel-bypass API. Used when even Onload's socket layer is too slow — direct ring buffer access to the NIC.*
+
+## HFT Architecture & Practice
+
+[Algorithmic and High-Frequency Trading (Cartea, Jaimungal, Penalva)](https://www.amazon.com/Algorithmic-High-Frequency-Trading-Mathematics-Finance/dp/1107091144)
+*Mathematical treatment of market microstructure, optimal execution, and market making. Standard reference for the quantitative side of electronic trading strategies.*
+
+[Trading and Exchanges (Larry Harris)](https://www.amazon.com/Trading-Exchanges-Market-Microstructure-Practitioners/dp/0195144708)
+*Comprehensive textbook on market microstructure from a practitioner's perspective. Explains how exchanges, market makers, and order types actually work.*
+
+[High-Frequency Trading: A Practical Guide (Aldridge)](https://www.amazon.com/High-Frequency-Trading-Practical-Algorithmic-Strategies/dp/1118343506)
+*Practical guide to HFT strategies, infrastructure, and risk management. Covers backtesting, latency budgets, and operational realities of running a trading system.*
+
+[Low Latency Trading: Insights into Performance (Henrique Bucher)](https://www.amazon.com/Low-Latency-Trading-Insights-Performance/dp/B0GG5M4BN7)
+*Practitioner's guide to building low-latency trading systems. Covers measurement methodology, kernel-bypass networking, lock-free data structures, and the engineering tradeoffs that determine real-world tick-to-trade latency.*
+
+[HFT University](https://hftuniversity.com)
+*Training platform for low-latency C++ and HFT engineering. Project-based challenges and benchmarks covering market data parsing, order book construction, and latency-critical infrastructure.*
 
 # Cryptography
 
